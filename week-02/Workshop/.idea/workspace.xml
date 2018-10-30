@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5f7e03-0a29-463f-a0a8-24fc9bb40c12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ChangeElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompareLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IncrementElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Third.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DiagonalMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,37 +22,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2023" />
+          <entry key="java" value="2474" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2023" />
+          <entry key="JAVA" value="2474" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Doubling.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Factorio.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,14 +119,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrintAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+            <state relative-caret-position="224">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DiagonalMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -181,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/ChangeElement.java" />
         <option value="$PROJECT_DIR$/src/IncrementElement.java" />
         <option value="$PROJECT_DIR$/src/PrintAll.java" />
+        <option value="$PROJECT_DIR$/src/DiagonalMatrix.java" />
       </list>
     </option>
   </component>
@@ -226,7 +222,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540915342742" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540918381143" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -242,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrintAll">
+  <component name="RunManager" selected="Application.DiagonalMatrix">
     <configuration name="ChangeElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChangeElement" />
       <module name="Workshop" />
@@ -250,8 +246,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CompareLength" />
+    <configuration name="DiagonalMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DiagonalMatrix" />
       <module name="Workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -279,19 +275,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CompareLength" />
       <item itemvalue="Application.SumElements" />
       <item itemvalue="Application.ChangeElement" />
       <item itemvalue="Application.IncrementElement" />
       <item itemvalue="Application.PrintAll" />
+      <item itemvalue="Application.DiagonalMatrix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiagonalMatrix" />
         <item itemvalue="Application.PrintAll" />
         <item itemvalue="Application.IncrementElement" />
         <item itemvalue="Application.ChangeElement" />
         <item itemvalue="Application.SumElements" />
-        <item itemvalue="Application.CompareLength" />
       </list>
     </recent_temporary>
   </component>
@@ -305,12 +301,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540899142487</updated>
-      <workItem from="1540899147799" duration="15536000" />
+      <workItem from="1540899147799" duration="19152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15536000" />
+    <option name="totallyTimeSpent" value="19152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -324,14 +320,14 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1319838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="REST Client" weight="0.54270464" />
-      <window_info anchor="bottom" id="Messages" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -449,11 +445,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintAll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        <state relative-caret-position="224">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DiagonalMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -16,9 +16,10 @@ public class DrawTriangle {
         System.out.println("Number:");
         int myNumber = input.nextInt();
 
-
-        for (int a = 1; a <= myNumber; a++) {
-            System.out.println("*");
+        for (int i=0; i <= myNumber; i++) {
+            for (int j=0; j<i; j++) {
+                System.out.print("*");
+            }System.out.println("");
         }
     }
 }

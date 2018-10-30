@@ -9,7 +9,6 @@ import java.util.Scanner;
 //   ***
 //  *****
 // *******
-//
 // The pyramid should have as many lines as the number was
 
 public class DrawPyramid {
@@ -18,11 +17,20 @@ public class DrawPyramid {
         System.out.println("Number:");
         int myNumber = myScanner.nextInt();
 
-        for (int i = 0; i <= myNumber; i+= 2) {
-            for (int k = 0; k <)
+
+        for (int i = 1; i < myNumber * 2; i += 2) {
+            for (int k = 0; k < myNumber - i / 2; k++) {
+                System.out.print(" ");
+            }
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
-            } System.out.println("");
+            }
+            System.out.println("");
         }
     }
 }
+
+
+
+
+

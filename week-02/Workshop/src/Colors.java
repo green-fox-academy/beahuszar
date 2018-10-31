@@ -8,7 +8,15 @@
 //   `"orchid", "violet", "pink", "hot pink"
 
 public class Colors {
-    int[][] multiArray =  {
+    public static void main(String[] args) {
+
+        String[][] multiArray = {
+                {"lime", "forest green", "olive", "pale green", "spring green"},
+                {"orange red", "red", "tomato"},
+                {"orange red", "red", "tomato"},
+                {"orchid", "violet", "pink", "hot pink"},
+        };
 
     }
+
 }

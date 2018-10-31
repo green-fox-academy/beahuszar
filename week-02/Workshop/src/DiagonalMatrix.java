@@ -10,12 +10,18 @@ public class DiagonalMatrix {
     // - Print this two dimensional array to the output
 
     public static void main(String[] args) {
-        int[][] multiDArray = new int[3][3];
+        int[][] multiDArray = new int[4][4];
 
         for (int i = 0; i < multiDArray.length; i++) {
-            for (int j = 0; j < multiDArray.length; j++) {
-                if (i == j) {
-                    System.out.print(1);
+            for (int j = 0; j <= multiDArray.length; j++) {
+                if (j == i) {
+                    System.out.print("1 ");
+                }
+                else if (j != i && j == multiDArray.length) {
+                        System.out.println("");
+                    }
+                else if (j != i) {
+                    System.out.print("0 ");;
                 }
             }
         }

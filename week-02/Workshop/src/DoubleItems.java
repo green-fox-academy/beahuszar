@@ -10,13 +10,6 @@ public class DoubleItems {
     public static void main(String[] args) {
         int[] numList = {3, 4, 5, 6, 7};
         System.out.println(Arrays.toString(newValue(numList)));
-
-
-        /* int[] newNumlist = Arrays.copyOfRange(numList, 0, numList.length);
-        for (int i = 0; i < numList.length; i++) {
-            newNumlist[i] = numList[i] * 2;
-        }
-        System.out.print(Arrays.toString(newNumlist)); */
     }
 
    public static int[] newValue(int[] input) {
@@ -28,3 +21,9 @@ public class DoubleItems {
         return newInput;
     }
 }
+
+        /* int[] newNumlist = Arrays.copyOfRange(numList, 0, numList.length);
+        for (int i = 0; i < numList.length; i++) {
+            newNumlist[i] = numList[i] * 2;
+        }
+        System.out.print(Arrays.toString(newNumlist)); */

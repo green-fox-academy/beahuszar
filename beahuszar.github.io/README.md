@@ -1,1 +1,0 @@
-# beahuszar.github.io

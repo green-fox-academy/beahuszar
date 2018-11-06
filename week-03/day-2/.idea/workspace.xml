@@ -23,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1513" />
+          <entry key="java" value="1736" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1513" />
+          <entry key="JAVA" value="1736" />
         </counts>
       </usages-collector>
     </session>
@@ -66,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ElementFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="42">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/IsInList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -114,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/AppendLetter.java" />
         <option value="$PROJECT_DIR$/src/Candyshop.java" />
         <option value="$PROJECT_DIR$/src/ElementFinder.java" />
+        <option value="$PROJECT_DIR$/src/IsInList.java" />
       </list>
     </option>
   </component>
@@ -159,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541516955411" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541518770440" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -177,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ElementFinder">
+  <component name="RunManager" selected="Application.IsInList">
     <configuration name="AppendLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppendLetter" />
       <module name="day-2" />
@@ -199,6 +209,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IsInList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IsInList" />
+      <module name="day-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Matchmaking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Matchmaking" />
       <module name="day-2" />
@@ -206,27 +223,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolarSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SolarSystem" />
-      <module name="day-2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.SolarSystem" />
       <item itemvalue="Application.Matchmaking" />
       <item itemvalue="Application.AppendLetter" />
       <item itemvalue="Application.Candyshop" />
       <item itemvalue="Application.ElementFinder" />
+      <item itemvalue="Application.IsInList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsInList" />
         <item itemvalue="Application.ElementFinder" />
         <item itemvalue="Application.Candyshop" />
         <item itemvalue="Application.AppendLetter" />
         <item itemvalue="Application.Matchmaking" />
-        <item itemvalue="Application.SolarSystem" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +256,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14069000" />
+    <option name="totallyTimeSpent" value="15960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -368,8 +378,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ElementFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="42">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IsInList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
         </state>
       </provider>
     </entry>

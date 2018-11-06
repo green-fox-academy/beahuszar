@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMaps {
     public static void main(String[] args) {
@@ -12,6 +13,11 @@ public class HashMaps {
 
         for (String key: hm.keySet()) { //iteration
             System.out.println(key+" : " +hm.get(key));
+        }
+        System.out.println();
+
+        for (Map.Entry<String, String> entry: hm.entrySet()) { //iteration through entries only
+            System.out.println(entry.getKey());
         }
         System.out.println();
 

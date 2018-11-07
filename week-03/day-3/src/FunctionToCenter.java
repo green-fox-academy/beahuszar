@@ -16,14 +16,8 @@ public class FunctionToCenter {
         for (int i = 0; i < HEIGHT; i += step) {
             for (int j = 0; j < HEIGHT ; j += step) {
                 drawLine(i,0,graphics);
-            }
-            for (int j = 0; j < HEIGHT ; j += step) {
                 drawLine(0,j,graphics);
-            }
-            for (int j = 0; j < HEIGHT ; j += step) {
                 drawLine(HEIGHT,j,graphics);
-            }
-            for (int j = 0; j <= HEIGHT ; j += step) {
                 drawLine(i,HEIGHT,graphics);
             }
         }

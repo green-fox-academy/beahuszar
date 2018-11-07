@@ -12,9 +12,8 @@ public class FunctionToCenter {
         // Fill the canvas with lines from the edges, every 20 px, to the center.
 
         int step = 10;
-        drawLine(HEIGHT,HEIGHT,graphics);
-        for (int i = 0; i < HEIGHT; i += step) {
-            for (int j = 0; j < HEIGHT ; j += step) {
+        for (int i = 0; i <= HEIGHT; i += step) {
+            for (int j = 0; j <= HEIGHT ; j += step) {
                 drawLine(i,0,graphics);
                 drawLine(0,j,graphics);
                 drawLine(HEIGHT,j,graphics);

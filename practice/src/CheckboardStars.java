@@ -1,4 +1,4 @@
-public class Trial {
+public class CheckboardStars {
     public static void main(String[] args) {
         int length = 16;
         int height = 8;

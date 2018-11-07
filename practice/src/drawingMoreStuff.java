@@ -14,7 +14,7 @@ public class drawingMoreStuff extends JPanel {
         g.drawRect(10,55, 100, 30); //10 over 55 down 100 wide 30 pixels tall
 
         g.setColor(Color.GREEN);
-        g.fillOval(10, 95, 100,30); //same as rect but rounded edges,
+        g.fillOval(10, 95, 100,30); //first x-y sets the starting point, then the size can be given
 
         g.setColor(Color.ORANGE);
         g.fill3DRect(10,160,100,50, true); //raised:true --> 3D

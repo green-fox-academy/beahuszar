@@ -11,7 +11,7 @@ public class drawingGraphics extends JPanel {
         g.setColor(Color.BLUE); // color for graphics object
         g.fillRect(25,25,100,30);
 
-        g.setColor(new Color(190,81,215)); //RGB values
+        g.setColor(new Color((int)(Math.random() * 255),(int)(Math.random() * 255),(int)(Math.random() * 255))); //RGB values
         g.fillRect(25,65,100,30);
 
         g.setColor(Color.RED);

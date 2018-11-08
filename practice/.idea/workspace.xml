@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-03/day-2/src/JosephusProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-03/day-2/src/JosephusManual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week-03/day-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week-03/day-2/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -162,7 +162,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
@@ -284,15 +284,15 @@
       <workItem from="1541509950081" duration="7283000" />
       <workItem from="1541531896774" duration="2869000" />
       <workItem from="1541577509075" duration="4934000" />
-      <workItem from="1541674843428" duration="5615000" />
+      <workItem from="1541674843428" duration="6692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31984000" />
+    <option name="totallyTimeSpent" value="33061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17327935" />

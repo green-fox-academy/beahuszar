@@ -1,11 +1,9 @@
 import javax.swing.*;
-
 import java.awt.*;
-import java.util.ArrayList;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class ConnectTheDots {
+public class ConnectTheDots2 {
     public static void mainDraw(Graphics graphics) {
         // Create a function that takes 1 parameter:
         // An array of {x, y} points
@@ -21,18 +19,17 @@ public class ConnectTheDots {
     }
 
     public static void connectIt (int[][] input, Graphics graphics){
-        int[][] newArray = input;
+        int[] xArray = new int[input.length];
+        int[] yArray = new int[input.length];
 
         graphics.setColor(Color.GREEN);
 
-        for (int i = 0; i < newArray.length - 1 ; i++) {
-                graphics.drawLine(newArray[i][0],newArray[i][1],newArray[i + 1][0],newArray[i + 1][1]);
+        for (int i = 0; i < input.length; i++) {
+            xArray[i] = input[i][0];
+            yArray[i] = input[i][1];
         }
+        graphics.fillPolygon(xArray,yArray,input.length);
 
-/*        graphics.drawLine(newArray[0][0],newArray[0][1],newArray[1][0],newArray[1][1]);
-        graphics.drawLine(newArray[1][0],newArray[1][1],newArray[2][0],newArray[2][1]);
-        graphics.drawLine(newArray[2][0],newArray[2][1],newArray[3][0],newArray[3][1]);
-        graphics.drawLine(newArray[3][0],newArray[3][1],newArray[0][0],newArray[0][1]);*/
     }
 
     // Don't touch the code below

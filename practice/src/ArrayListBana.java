@@ -16,6 +16,7 @@ public class ArrayListBana {
         names.set(0, "John Adams"); //overwriting the value of original index§
         names.remove(3); //remove index3
         // names.removeRange(0,1); //should remove all items in the range but not working
+
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }

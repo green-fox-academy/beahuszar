@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-03/day-2/src/StudentCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-03/day-2/src/SubInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayListBana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListBana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week-03/day-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week-03/day-2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4207" />
+          <entry key="java" value="4208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4207" />
+          <entry key="JAVA" value="4208" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayListBana.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="210">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#325#333#0" expanded="true" />
@@ -144,7 +145,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/ArraylistsHw.java" />
         <option value="$PROJECT_DIR$/src/HashMaps.java" />
-        <option value="$PROJECT_DIR$/src/ArrayListBana.java" />
         <option value="$PROJECT_DIR$/src/demo.java" />
         <option value="$PROJECT_DIR$/src/forTheGraphics.java" />
         <option value="$PROJECT_DIR$/src/forMoreDrawingStuff.java" />
@@ -152,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/drawingGraphics.java" />
         <option value="$PROJECT_DIR$/src/demoDrawing.java" />
         <option value="$PROJECT_DIR$/src/demoArraylist.java" />
+        <option value="$PROJECT_DIR$/src/ArrayListBana.java" />
       </list>
     </option>
   </component>
@@ -283,12 +284,12 @@
       <workItem from="1541509950081" duration="7283000" />
       <workItem from="1541531896774" duration="2869000" />
       <workItem from="1541577509075" duration="4934000" />
-      <workItem from="1541674843428" duration="2982000" />
+      <workItem from="1541674843428" duration="3609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29351000" />
+    <option name="totallyTimeSpent" value="29978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -400,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayListBana.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="210">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#325#333#0" expanded="true" />

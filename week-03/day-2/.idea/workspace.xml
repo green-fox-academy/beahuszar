@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7bf1d53-3597-448a-987e-35071df1939a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/JosephusProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guessMyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessMyNumber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="23" />
+          <entry key="java" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="23" />
+          <entry key="JAVA" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5674" />
+          <entry key="java" value="5758" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5674" />
+          <entry key="JAVA" value="5758" />
         </counts>
       </usages-collector>
     </session>
@@ -50,10 +50,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guessMyNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/JosephusProblem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="84">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -98,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/SubInt.java" />
         <option value="$PROJECT_DIR$/src/SubStrList.java" />
         <option value="$PROJECT_DIR$/src/guessMyNumber.java" />
+        <option value="$PROJECT_DIR$/src/JosephusProblem.java" />
       </list>
     </option>
   </component>
@@ -143,7 +144,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541707303852" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541712157025" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -161,9 +162,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.guessMyNumber">
-    <configuration name="HeWillNever" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HeWillNever" />
+  <component name="RunManager" selected="Application.JosephusProblem">
+    <configuration name="JosephusProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JosephusProblem" />
       <module name="day-2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HeWillNever" />
       <item itemvalue="Application.StudentCounter" />
       <item itemvalue="Application.SubInt" />
       <item itemvalue="Application.SubStrList" />
       <item itemvalue="Application.guessMyNumber" />
+      <item itemvalue="Application.JosephusProblem" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JosephusProblem" />
         <item itemvalue="Application.guessMyNumber" />
         <item itemvalue="Application.SubStrList" />
         <item itemvalue="Application.SubInt" />
         <item itemvalue="Application.StudentCounter" />
-        <item itemvalue="Application.HeWillNever" />
       </list>
     </recent_temporary>
   </component>
@@ -227,12 +228,12 @@
       <workItem from="1541494361254" duration="2048000" />
       <workItem from="1541502286643" duration="838000" />
       <workItem from="1541531801690" duration="92000" />
-      <workItem from="1541671812113" duration="22514000" />
+      <workItem from="1541671812113" duration="24737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43701000" />
+    <option name="totallyTimeSpent" value="45924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -303,21 +304,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guessMyNumber.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../week-02/day-1/src/ParametricAverage.java">
@@ -468,8 +454,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guessMyNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="168">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JosephusProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>

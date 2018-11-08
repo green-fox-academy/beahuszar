@@ -6,7 +6,7 @@ public class guessMyNumber {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Guess a number between 1-100. You have 5 lives to use.");
         int guess = myScanner.nextInt();
-        int myNumber = 10; // (int)(Math.random() * 101);
+        int myNumber = (int)(Math.random() * 101);
         int rounds = 4;
 
         while (rounds > 0) {

@@ -15,9 +15,7 @@ public class ConnectTheDots {
         // {120, 100}, {85, 130}, {50, 100}}
 
         int[][] myArray = {{10, 10}, {290,  10}, {290, 290}, {10, 290}};
-        for (int i = 0; i < myArray.length; i++) {
             connectIt(myArray, graphics);
-        }
     }
 
     public static void connectIt (int[][] input, Graphics graphics){
@@ -25,10 +23,8 @@ public class ConnectTheDots {
 
         graphics.setColor(Color.GREEN);
 
-        for (int i = 0; i < newArray.length ; i++) {
-            for (int j = 0; j < newArray.length; j++) {
-                graphics.drawLine(newArray[i][0],newArray[j][1],newArray[i][0],newArray[j][1]);
-            }
+        for (int i = 0; i < newArray.length - 1 ; i++) {
+                graphics.drawLine(newArray[i][0],newArray[i][1],newArray[i + 1][0],newArray[i + 1][1]);
         }
 
 /*        graphics.drawLine(newArray[0][0],newArray[0][1],newArray[1][0],newArray[1][1]);

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-03/day-5-Project/src/LinePlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-03/day-5-Project/src/LinePlayQuarters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-03/day-5-Project/src/LinePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-03/day-5-Project/src/LinePlay.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

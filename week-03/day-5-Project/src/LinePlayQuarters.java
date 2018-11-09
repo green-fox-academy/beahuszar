@@ -11,22 +11,30 @@ public class LinePlayQuarters {
         int y1 = 0;
         int hDiv = HEIGHT / 2;
         int wDiv = WIDTH / 2;
+        int x2 = wDiv;
+        int y2 = hDiv;
 
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0,0,WIDTH,HEIGHT);
 
-        for (int i = 20; i < hDiv; i += 20) {
-            graphics.setColor(new Color(181,74,244));
-            graphics.drawLine(x1 + i,0,wDiv,y1 + i); //upper left
-            graphics.drawLine(wDiv + i,0,WIDTH ,y1 + i); //upper right
-            graphics.drawLine(x1 + i,hDiv,wDiv,hDiv + i); //lower left
-            graphics.drawLine(wDiv + i,hDiv,WIDTH ,hDiv + i); //lower right
-            graphics.setColor(Color.GREEN);
-            graphics.drawLine(0,y1 + i,x1 + i,hDiv);
-            graphics.drawLine(wDiv,y1 + i,wDiv + i,hDiv);
-            graphics.drawLine(0,hDiv + i,x1 + i,HEIGHT );
-            graphics.drawLine(wDiv,hDiv + i,wDiv + i, HEIGHT );
+        for (int j = 0; j < 4 * hDiv; j += hDiv) {
+            x1 += j;
+            x2 += j;
+            y1 += j;
+            y2 += j;
+            for (int i = 20; i < hDiv; i += 20) {
+                graphics.setColor(new Color(181, 74, 244));
+                graphics.drawLine(x1 + i, y1, x2, y1 + i);
+                graphics.drawLine(x1 + i, y1 + hDiv, x2, y1 + i + hDiv);
+                graphics.drawLine(x1 + i + wDiv, y1, x2 + wDiv, y1 + i);
+                graphics.setColor(Color.GREEN);
+                graphics.drawLine(x1, y1 + i, x1 + i, y2);
+                graphics.drawLine(x1 + wDiv, y1 + i, x1 + i + wDiv, y2);
+                graphics.drawLine(x1, y1 + i+ hDiv, x1 + i, y2+ hDiv);
+            }
         }
+
+
 
     }
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7bf1d53-3597-448a-987e-35071df1939a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ArmsgtrongNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArmstrongNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JosephusProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JosephusProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-5-Project/src/LinePlayQuarters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-5-Project/src/LinePlayQuarters.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +18,21 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -47,11 +49,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArmstrongNumber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guessMyNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JosephusProblem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JosephusManual.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -97,9 +126,9 @@
         <option value="$PROJECT_DIR$/src/SubStrList.java" />
         <option value="$PROJECT_DIR$/src/guessMyNumber.java" />
         <option value="$PROJECT_DIR$/src/JosephusManual.java" />
-        <option value="$PROJECT_DIR$/src/JosephusProblem.java" />
         <option value="$PROJECT_DIR$/src/ArmsgtrongNumber.java" />
         <option value="$PROJECT_DIR$/src/ArmstrongNumber.java" />
+        <option value="$PROJECT_DIR$/src/JosephusProblem.java" />
       </list>
     </option>
   </component>
@@ -110,9 +139,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,8 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,13 +167,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541720075289" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541772842905" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -230,17 +259,18 @@
       <workItem from="1541502286643" duration="838000" />
       <workItem from="1541531801690" duration="92000" />
       <workItem from="1541671812113" duration="32696000" />
+      <workItem from="1541771538962" duration="977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53883000" />
+    <option name="totallyTimeSpent" value="54860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14493927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14736842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -453,6 +483,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArmstrongNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/guessMyNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -462,22 +499,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JosephusProblem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="13" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JosephusManual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArmstrongNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>

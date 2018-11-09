@@ -1,7 +1,6 @@
 public class JosephusProblem {
 
     public static void main(String[] args) {
-
         int participants = 5643;
         System.out.println(getSafePosition(participants));
     }

@@ -1,4 +1,4 @@
-import javafx.scene.shape.Path;
+import java.nio.file.Path;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -20,10 +20,10 @@ public class WriteMultipleLines {
         String myWord = "blabla";
         int myNumber = 5;
 
-        myfunction(myPath, myWord, myNumber);
+        myFunction(myPath, myWord, myNumber);
     }
 
-    public static void myfunction (String myPath, String myWord, int myNumber ) {
+    public static void myFunction (String myPath, String myWord, int myNumber ) {
         List<String> content = new ArrayList();
 
         for (int i = 0; i < myNumber; i++) {

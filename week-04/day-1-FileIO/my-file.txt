@@ -1,0 +1,3 @@
+it's a happy day
+let's have another line
+and use this one too

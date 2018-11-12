@@ -8,7 +8,7 @@ public class DivideByZero {
         int myNumber = 0;
         try {
             System.out.println(takeTheNumber(myNumber));
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             System.out.println("fail");
         }
     }

@@ -1,0 +1,3 @@
+class Acme {
+    //empty class
+}

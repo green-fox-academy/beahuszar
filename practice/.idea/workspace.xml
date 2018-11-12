@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/This.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Acme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NewOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,22 +36,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="42" />
+          <entry key="java" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6288" />
+          <entry key="java" value="6303" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6288" />
+          <entry key="JAVA" value="6303" />
         </counts>
       </usages-collector>
     </session>
@@ -58,10 +59,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/This.java">
+        <entry file="file://$PROJECT_DIR$/src/NewOperator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="84">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,6 +115,8 @@
         <option value="$PROJECT_DIR$/src/Human.java" />
         <option value="$PROJECT_DIR$/src/Earth.java" />
         <option value="$PROJECT_DIR$/src/This.java" />
+        <option value="$PROJECT_DIR$/src/NewOperator.java" />
+        <option value="$PROJECT_DIR$/src/Acme.java" />
       </list>
     </option>
   </component>
@@ -150,7 +162,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542056268028" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542057923794" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -167,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.This">
+  <component name="RunManager" selected="Application.NewOperator">
     <configuration name="DoableHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DoableHomework" />
       <module name="practice" />
@@ -182,15 +194,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ErrorHandling" />
+    <configuration name="ErrorHandling2" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ErrorHandling2" />
       <module name="practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorHandling2" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ErrorHandling2" />
+    <configuration name="NewOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NewOperator" />
       <module name="practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,19 +224,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ErrorHandling2" />
-      <item itemvalue="Application.ErrorHandling" />
       <item itemvalue="Application.DoableHomework" />
       <item itemvalue="Application.demoArraylist" />
       <item itemvalue="Application.Earth" />
       <item itemvalue="Application.This" />
+      <item itemvalue="Application.NewOperator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NewOperator" />
         <item itemvalue="Application.This" />
         <item itemvalue="Application.Earth" />
         <item itemvalue="Application.DoableHomework" />
         <item itemvalue="Application.demoArraylist" />
-        <item itemvalue="Application.ErrorHandling" />
       </list>
     </recent_temporary>
   </component>
@@ -248,16 +260,15 @@
       <workItem from="1541947009060" duration="5301000" />
       <workItem from="1541957829182" duration="625000" />
       <workItem from="1542015888407" duration="6485000" />
-      <workItem from="1542050873127" duration="4798000" />
+      <workItem from="1542050873127" duration="6456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54407000" />
+    <option name="totallyTimeSpent" value="56065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="633" y="0" width="653" height="687" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.39966273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -445,8 +456,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/This.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="156">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>

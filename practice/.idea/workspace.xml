@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week-04/day-1-FileIO/my-file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../week-04/day-1-FileIO/my-file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week-04/day-1-FileIO/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../week-04/day-1-FileIO/myfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week-04/day-1-FileIO/src/CopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-04/day-1-FileIO/src/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-04/day-1-FileIO/src/Logs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +56,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErrorHandling2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -71,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ErrorHandling.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -250,12 +247,12 @@
       <workItem from="1541674843428" duration="7413000" />
       <workItem from="1541947009060" duration="5301000" />
       <workItem from="1541957829182" duration="625000" />
-      <workItem from="1542015888407" duration="5238000" />
+      <workItem from="1542015888407" duration="5804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48362000" />
+    <option name="totallyTimeSpent" value="48928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -390,20 +387,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErrorHandling.java">
+    <entry file="file://$PROJECT_DIR$/src/ErrorHandling2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="273">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErrorHandling2.java">
+    <entry file="file://$PROJECT_DIR$/src/ErrorHandling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="357">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

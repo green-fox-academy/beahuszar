@@ -17,16 +17,15 @@ public class CopyFile {
     }
 
     public static boolean copyIt (String myPath, String myPath2) {
-        boolean returnIT = true;
         Path newPath1 = Paths.get(myPath);
         Path newPath2 = Paths.get(myPath2);
 
         try {
             List<String> nPList2 = Files.readAllLines(newPath2);
             Files.write(newPath1, nPList2);
-            return returnIT;
+            return true;
         } catch (Exception e) {
-            return !returnIT;
+            return false;
         }
 
     }

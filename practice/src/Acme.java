@@ -1,3 +1,0 @@
-class Acme {
-    //empty class
-}

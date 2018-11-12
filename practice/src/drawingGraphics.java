@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 public class drawingGraphics extends JPanel {
@@ -18,4 +17,14 @@ public class drawingGraphics extends JPanel {
         g.drawString("This is some text",25,120);
     }
 
+    public static class forTheGraphics {
+        public static void main(String[] args) {
+            JFrame f = new JFrame("Title");
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            drawingGraphics xxx = new drawingGraphics();
+            f.add(xxx);
+            f.setSize(800,500);
+            f.setVisible(true);
+        }
+    }
 }

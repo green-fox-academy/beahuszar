@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 public class drawingMoreStuff extends JPanel {
@@ -20,5 +19,18 @@ public class drawingMoreStuff extends JPanel {
         g.fill3DRect(10,160,100,50, true); //raised:true --> 3D
 
 
+    }
+
+    public static class forMoreDrawingStuff {
+        public static void main(String[] args) {
+            JFrame f = new JFrame("Title");
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            drawingMoreStuff p = new drawingMoreStuff();
+            p.setBackground(Color.BLACK);
+            f.add(p);
+            f.setSize(500,270);
+            f.setVisible(true);
+        }
     }
 }

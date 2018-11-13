@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-04/day-2-3-ClassesAndObjects/src/blogpost/BlogPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week-04/day-2-3-ClassesAndObjects/src/blogpost/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-04/day-2-3-ClassesAndObjects/src/animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-04/day-2-3-ClassesAndObjects/src/animal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClassesAndFieldsTutorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="357">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -183,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542108988825" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542110601922" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -288,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63793000" />
+    <option name="totallyTimeSpent" value="64630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -476,8 +477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassesAndFieldsTutorial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="357">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>

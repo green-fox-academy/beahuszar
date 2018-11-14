@@ -1,3 +1,5 @@
+package errorHandling;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -6,7 +8,7 @@ public class ErrorHandling {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         File myFile = new File("practice.iml");
-        
+
         System.out.println(myFile.exists());
         System.out.println(myFile.canRead() + "," + myFile.canWrite());
 

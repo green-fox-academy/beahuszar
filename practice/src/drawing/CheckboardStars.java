@@ -1,3 +1,5 @@
+package drawing;
+
 public class CheckboardStars {
     public static void main(String[] args) {
         int length = 16;

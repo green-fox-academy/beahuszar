@@ -1,3 +1,5 @@
+package drawing;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -14,7 +16,7 @@ public class drawingGraphics extends JPanel {
         g.fillRect(25,65,100,30);
 
         g.setColor(Color.RED);
-        g.drawString("This is some text",25,120);
+        g.drawString("OOP.This is some text",25,120);
     }
 
     public static class forTheGraphics {

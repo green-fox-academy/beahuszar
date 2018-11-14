@@ -5,10 +5,16 @@ public class DavefeinbergTut {
     System.out.println(fact(4));
   }
   public static int fact(int n) {
-    if (n == 0)
+    System.out.println("Method " + n);
+    if (n == 1) {
+      System.out.println("Returned 1");
       return 1;
-    else
-      return fact(n - 1) * n;
+    } else {
+      int result = fact(n - 1) * n;
+      System.out.print("Returned " + result);
+      System.out.println(" : " + n + " + getFACT(" + n + " - 1)");
+      return result;
+    }
 
   }
 }

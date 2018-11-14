@@ -1,3 +1,5 @@
+package OOP;
+
 class Machine {
     private String name;
     private int code;

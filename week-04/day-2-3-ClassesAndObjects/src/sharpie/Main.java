@@ -7,5 +7,6 @@ public class Main {
         smallBlack.use();
         System.out.println(smallBlack.inkAmount);
 
+
     }
 }

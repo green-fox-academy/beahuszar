@@ -13,12 +13,22 @@ public class Blog {
   delete(int) one item at given index
   update(int, BlogPost) one item at the given index and update it with another BlogPos*/
 
+  public List<BlogPost> listOfPosts;
 
-  public void store(BlogPost blogPost, ArrayList<BlogPost> blogPosts) {
-    blogPosts.add(blogPost);
+  public Blog (List<BlogPost> listOfPosts) {
+    this.listOfPosts = listOfPosts;
   }
 
-  public void delete(int index, ArrayList) {
-
+  public void addPosts(BlogPost input){
+    listOfPosts.add(input);
   }
+
+  public void update(int index,BlogPost newPost) {
+    listOfPosts.set(index,newPost);
+  }
+
+  public void delete(int index) {
+    listOfPosts.remove(index);
+  }
+
 }

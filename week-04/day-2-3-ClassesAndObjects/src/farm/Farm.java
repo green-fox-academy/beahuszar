@@ -13,9 +13,12 @@ it has list of Animals
 
 public class Farm {
   int slots;
-  int hungerLevel;
+  public List<Animal> animalList;
 
-  List<Animal> animalList;
+  public Farm (){
+    this.slots = 20;
+  }
+
 
   public void breed() {
     if (slots > 0) {
@@ -24,8 +27,9 @@ public class Farm {
   }
 
   public void slaughter() {
+    int hungerLevel;
     hungerLevel = animalList.get(0).hunger;
-    Animal index = new Animal();
+    Animal index =  new Animal();
 
     for (Animal noe : animalList) {
       if (noe.hunger > hungerLevel ) {

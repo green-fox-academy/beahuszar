@@ -1,22 +1,4 @@
-class Person {
-    // Instance variables (data or "state")
-    String name;
-    int age;
-
-    // classes can contain
-    //1. Data
-    //2. subroutines (methods)
-    void speak () {
-        for (int i = 0; i < 3; i++) {
-            System.out.println("My name is " + name + " and I am " + age + " years od.");
-
-        }
-    }
-
-    void sayHello (){
-        System.out.println("Hello there");
-    }
-}
+package OOP;
 
 public class ClassesAndFieldsTutorial {
     public static void main(String[] args) {

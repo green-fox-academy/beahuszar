@@ -11,10 +11,10 @@ public class demoFileIO {
         Path output = Paths.get("write.txt");
         int[] numbers = {1, 2, 3, 4};
         try {
-            // List<String> lines = Files.readAllLines(source);
-            // Files.write(outpu, lines);
+             List<String> lines = Files.readAllLines(source);
+             Files.write(output, lines);
             System.out.println(numbers[5]);
-            // throw new ArithmeticException();
+//             throw new ArithmeticException();
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Index out of bounds. Err: " + e);
         } catch (Exception e) {

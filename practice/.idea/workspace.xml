@@ -272,7 +272,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542574626086" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542574961410" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -289,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bana (1)">
+  <component name="RunManager" selected="Application.demoFileIO">
     <configuration name="ArraysBana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arraysAndHashmaps.ArraysBana" />
       <module name="practice" />
@@ -309,19 +309,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="methodsNFunctions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Bana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursions.Bana" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="recursions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -349,6 +336,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demoFileIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demos.demoFileIO" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="rectangleFromJudgefudge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="recursions.rectangleFromJudgefudge" />
       <module name="practice" />
@@ -364,19 +364,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ErrorHandling2" />
-      <item itemvalue="Application.Bana" />
       <item itemvalue="Application.rectangleFromJudgefudge" />
       <item itemvalue="Application.ArraysBana" />
       <item itemvalue="Application.ToStringMethod" />
       <item itemvalue="Application.Bana (1)" />
+      <item itemvalue="Application.demoFileIO" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demoFileIO" />
         <item itemvalue="Application.Bana (1)" />
         <item itemvalue="Application.ArraysBana" />
         <item itemvalue="Application.ToStringMethod" />
         <item itemvalue="Application.rectangleFromJudgefudge" />
-        <item itemvalue="Application.Bana" />
       </list>
     </recent_temporary>
   </component>

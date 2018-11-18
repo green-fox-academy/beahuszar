@@ -9,10 +9,10 @@ import java.util.ArrayList;
 public class FileHandler {
   public void saveProducts(ArrayList<Product> products, String fileName) {
     Path file = Paths.get(fileName);
-    ArrayList<String> fileContent = new ArrayList();
+    ArrayList<String> fileContent = new ArrayList(); // to convert object list to string list
 
     for(Product product : products) {
-      fileContent.add(product.toString());
+      fileContent.add(product.toString()); //adding objects as strings in the new list
     }
 
     try {

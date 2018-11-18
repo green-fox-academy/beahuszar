@@ -42,6 +42,5 @@ public class CLI {
 
   public static void printProduct(Product productToPrint) {
     System.out.println(productToPrint);
-
   }
 }

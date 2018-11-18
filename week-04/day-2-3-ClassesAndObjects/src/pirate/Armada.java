@@ -15,7 +15,7 @@ Have a armada.war(otherArmada) method where two armada can engage in war
 
 public class Armada {
   List<Ship> armada = new ArrayList();
-  private int numberOfShips = 1 + (int)(Math.random() * 100);
+  private int numberOfShips = 1 + (int)(Math.random() * 5);
   private Ship ship;
 
   public void recruitArmada () {

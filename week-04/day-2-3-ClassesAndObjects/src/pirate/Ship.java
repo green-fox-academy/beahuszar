@@ -17,11 +17,11 @@ Ships should have a method to battle other ships: ship.battle(otherShip)
 */
 
 public class Ship {
-  private List<Pirate> crew = new ArrayList();
+  List<Pirate> crew = new ArrayList();
   private int numOfPirates = 1 + (int) (Math.random() * 50);
   private int captainrounds = 1 + (int) ((Math.random() * 5));
-  private Pirate captain = new Pirate();
-
+  Pirate captain = new Pirate();
+  private String shipname;
 
 
   public void fillship() {
@@ -33,29 +33,33 @@ public class Ship {
       crew.add(new Pirate());
     }
     crew.add(this.captain);
+  }
 
+  public void shipSize () {
     System.out.println("Number of pirates alive: " + crew.size());
     this.captain.captainStatus();
   }
 
-  public void battle(Ship oppShip) {
-    boolean actualShipWon = true;
+  public boolean battle(Ship oppShip) {
+    boolean result = true;
     int thisShipPoints = this.crew.size() - this.captain.drinkCounter;
     int oppShipPoints = oppShip.crew.size() - oppShip.captain.drinkCounter;
 
     if (thisShipPoints > oppShipPoints) {
-      System.out.println(actualShipWon);
-      System.out.println("Let's have " + (int)(Math.random() * 100) + " rums!!");
+      result = result;
+//      System.out.println("Let's have " + (int)(Math.random() * 100) + " rums!!");
       for (int i = 0; i < 1 + (int) (Math.random() * oppShip.crew.size()); i++) {
         oppShip.crew.remove(i);
       }
 
     } else if (oppShipPoints > thisShipPoints) {
-      System.out.println(!actualShipWon);
-      System.out.println("Let's have " + (int)(Math.random() * 100) + "rums!!");
+      result = false;
+//      System.out.println("Let's have " + (int)(Math.random() * 100) + "rums!!");
       for (int i = 0; i < 1 + (int) (Math.random() * this.crew.size()); i++) {
         oppShip.crew.remove(i);
       }
     }
+
+    return result;
   }
 }

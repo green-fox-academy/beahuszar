@@ -1,8 +1,10 @@
+package ca;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class CA {
+public class CA_01_Basic {
 
         private static ArrayList<HashMap<String, Object>> products = new ArrayList();
 

@@ -3,8 +3,7 @@ package pirate;
 import java.util.Scanner;
 
 public class Pirate {
-  private int intoxication;
-  private int drinkCounter;
+  int drinkCounter;
   boolean death = false;
   boolean passedout = false;
 
@@ -12,14 +11,13 @@ public class Pirate {
 
   }
 
-  public Pirate(int intoxication) {
-    this.intoxication = intoxication;
+  public Pirate(int drinkCounter) {
+    this.drinkCounter = drinkCounter;
   }
 
 
-  public int drinkSomeRum() {
+  public void drinkSomeRum() {
     drinkCounter++;
-    return intoxication ++;
   }
 
   public void howsItGoingMate() {
@@ -63,14 +61,6 @@ public class Pirate {
     System.out.println("I am a parrot, squak, squak");
   }
 
-  public void pirateHealth() {
-    if (passedout == true) {
-      System.out.println("ZZZZZzzzzz");
-    } else if (death == true) {
-      System.out.println("kkhkhhhggggaaaargh");
-    } else howsItGoingMate();
-  }
-
   public void clearStatus() {
     switch (whatToDo()) {
       case "r":
@@ -93,6 +83,20 @@ public class Pirate {
     System.out.println("To wake him up, enter [w]");
 
     return myScanner.nextLine();
+  }
+
+  public void captainStatus() {
+        String reply;
+
+      if (death == true) {
+        reply = "Captain is dead";
+        System.out.println(reply);
+      } else if (drinkCounter < 5) {
+        reply = "Rum consumption: " + drinkCounter;
+        System.out.println(reply);
+      } else  {
+        System.out.println("Captain is passed out");
+      }
   }
 
 }

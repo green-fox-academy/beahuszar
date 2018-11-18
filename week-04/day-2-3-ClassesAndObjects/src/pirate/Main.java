@@ -5,9 +5,12 @@ public class Main {
   private static String davyJones = "Davy Jones";
 
   public static void main(String[] args) {
-    Pirate jack = new Pirate(2);
-    Pirate davyJones = new Pirate(3);
-    Pirate parrot = new Pirate();
+    Ship blackpearl = new Ship();
+    blackpearl.fillship();
+    Ship titanic = new Ship();
+    titanic.fillship();
+
+    blackpearl.battle(titanic);
 
   }
 }

@@ -6,8 +6,6 @@ public class BattleApp {
     blackpearl.fillship();
     Ship titanic = new Ship();
     titanic.fillship();
-
     blackpearl.battle(titanic);
-
   }
 }

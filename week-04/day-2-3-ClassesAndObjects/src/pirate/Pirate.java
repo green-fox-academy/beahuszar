@@ -6,12 +6,14 @@ public class Pirate {
   int drinkCounter;
   boolean death = false;
   boolean passedout = false;
+  private String name;
 
   public Pirate() {
 
   }
 
-  public Pirate(int drinkCounter) {
+  public Pirate(int drinkCounter, String name) {
+    this.name = name;
     this.drinkCounter = drinkCounter;
   }
 
@@ -40,10 +42,10 @@ public class Pirate {
   public void brawl(Pirate opp) {
     int chance = (int)(1 + Math.random() * 3);
 
-    if (this.death = true) {
-      System.out.println(this + " is already dead..why would you fight him??");
-    } else if (opp.death = true) {
-      System.out.println(opp + " is already dead..why would you fight him??");
+    if (this.death == true) {
+      System.out.println(this.toString() + " is already dead..why would you fight him??");
+    } else if (opp.death == true) {
+      System.out.println(opp.toString() + " is already dead..why would you fight him??");
     } else if (chance == 1) {
       System.out.println(this + " won");
       opp.passedout = true;
@@ -98,5 +100,7 @@ public class Pirate {
         System.out.println("Captain is passed out");
       }
   }
-
+  public String toString() {
+    return this.name;
+  }
 }

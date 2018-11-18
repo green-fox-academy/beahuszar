@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OOP/ToStringMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arraysAndHashmaps/ArraysBana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/methodsNFunctions/Bana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,36 +57,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="93" />
+          <entry key="java" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="93" />
+          <entry key="JAVA" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9950" />
+          <entry key="java" value="10658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9950" />
+          <entry key="JAVA" value="10658" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/arraysAndHashmaps/ArraysBana.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="-42">
               <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/methodsNFunctions/Bana.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -148,6 +156,7 @@
         <option value="$PROJECT_DIR$/src/recursions/rectangleFromJudgefudge.java" />
         <option value="$PROJECT_DIR$/src/OOP/ToStringMethod.java" />
         <option value="$PROJECT_DIR$/src/arraysAndHashmaps/ArraysBana.java" />
+        <option value="$PROJECT_DIR$/src/methodsNFunctions/Bana.java" />
       </list>
     </option>
   </component>
@@ -157,7 +166,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
@@ -183,12 +192,6 @@
               <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="homeworksNpractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -199,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542568023594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542569709879" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -216,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ArraysBana">
+  <component name="RunManager" selected="Application.Bana (1)">
     <configuration name="ArraysBana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arraysAndHashmaps.ArraysBana" />
       <module name="practice" />
@@ -230,12 +233,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursions.Bana" />
+    <configuration name="Bana (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="methodsNFunctions.Bana" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="recursions.*" />
+          <option name="PATTERN" value="methodsNFunctions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,8 +246,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DavefeinbergTut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursions.DavefeinbergTut" />
+    <configuration name="Bana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursions.Bana" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
@@ -291,19 +294,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ErrorHandling2" />
-      <item itemvalue="Application.DavefeinbergTut" />
       <item itemvalue="Application.Bana" />
       <item itemvalue="Application.rectangleFromJudgefudge" />
       <item itemvalue="Application.ArraysBana" />
       <item itemvalue="Application.ToStringMethod" />
+      <item itemvalue="Application.Bana (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bana (1)" />
         <item itemvalue="Application.ArraysBana" />
         <item itemvalue="Application.ToStringMethod" />
         <item itemvalue="Application.rectangleFromJudgefudge" />
         <item itemvalue="Application.Bana" />
-        <item itemvalue="Application.DavefeinbergTut" />
       </list>
     </recent_temporary>
   </component>
@@ -334,16 +337,15 @@
       <workItem from="1542273913437" duration="75000" />
       <workItem from="1542296650168" duration="974000" />
       <workItem from="1542533498435" duration="1459000" />
-      <workItem from="1542550036444" duration="4544000" />
+      <workItem from="1542550036444" duration="6223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84888000" />
+    <option name="totallyTimeSpent" value="86567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="0" width="653" height="687" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.44519392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -354,7 +356,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32129964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31672597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38967973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -619,11 +621,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/arraysAndHashmaps/ArraysBana.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="-42">
           <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/methodsNFunctions/Bana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>

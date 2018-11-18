@@ -1,9 +1,6 @@
 package pirate;
 
-public class Main {
-  private static String jack = "Jack";
-  private static String davyJones = "Davy Jones";
-
+public class BattleApp {
   public static void main(String[] args) {
     Ship blackpearl = new Ship();
     blackpearl.fillship();

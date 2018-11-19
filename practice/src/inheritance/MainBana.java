@@ -29,7 +29,7 @@ public class MainBana {
 
     System.out.println(((SubClassBana_Cats)randAnimal).favToy);  //another way to make it work
 
-    if (randAnimal instanceof SubClassBana_Cats) {  //to check whether it is the instance of the object
+    if (randAnimal instanceof SubClassBana_Cats) {  //to check whether it is the instance of the class
       System.out.println(randAnimal.getName() + " is a Cat");
     }
 

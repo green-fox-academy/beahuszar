@@ -12,7 +12,7 @@ public class Student {
     this.age = age;
     this.gender = gender;
     this.previousOrganization = previousOrganization;
-    skippedDays = 0;
+    this.skippedDays = 0;
   }
 
   public Student() {

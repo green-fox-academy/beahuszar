@@ -1,17 +1,17 @@
-package hw;
+package hw.hwBeforeInheritance;
 
-public class HwBefInh_Person {
+public class Person {
   String name;
   int age;
   String gender;
 
-  public HwBefInh_Person(String name, int age, String gender) {
+  public Person(String name, int age, String gender) {
     this.name = name;
     this.age = age;
     this.gender = gender;
   }
 
-  public HwBefInh_Person() {
+  public Person() {
     this.name = "Jane Doe";
     this.age = 30;
     this.gender = "female";

@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.superStuff;
 
 public class Super {
   String color="white";

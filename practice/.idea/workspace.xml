@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/inheritance/MainBana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inheritance/Super.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inheritance/MainBana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inheritance/SubClassBana_Cats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/banaVideos/SubClassBana_Cats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inheritance/SuperClassBana_Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/banaVideos/SuperClassBana_Animal.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,23 +60,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="119" />
+          <entry key="java" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="119" />
+          <entry key="JAVA" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="46" />
-          <entry key="java" value="12959" />
+          <entry key="java" value="12964" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12959" />
+          <entry key="JAVA" value="12964" />
           <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
@@ -83,46 +85,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/inheritance/SuperClassBana_Animal.java">
+        <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/inheritance/SubClassBana_Cats.java">
+        <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SubClassBana_Cats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-              <folding>
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SuperClassBana_Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/inheritance/MainBana.java">
+        <entry file="file://$PROJECT_DIR$/src/inheritance/Super.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="31" column="103" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
+            <state relative-caret-position="42">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -150,13 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HashMaps.java" />
-        <option value="$PROJECT_DIR$/src/demo.java" />
-        <option value="$PROJECT_DIR$/src/forTheGraphics.java" />
-        <option value="$PROJECT_DIR$/src/forMoreDrawingStuff.java" />
-        <option value="$PROJECT_DIR$/src/drawingMoreStuff.java" />
-        <option value="$PROJECT_DIR$/src/drawingGraphics.java" />
-        <option value="$PROJECT_DIR$/src/demoDrawing.java" />
         <option value="$PROJECT_DIR$/src/demoArraylist.java" />
         <option value="$PROJECT_DIR$/src/ArrayListBana.java" />
         <option value="$PROJECT_DIR$/src/LinePlayPractice.java" />
@@ -201,6 +187,13 @@
         <option value="$PROJECT_DIR$/src/inheritance/SuperClassBana_Animal.java" />
         <option value="$PROJECT_DIR$/src/inheritance/SubClassBana_Cats.java" />
         <option value="$PROJECT_DIR$/src/inheritance/MainBana.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/banaVideos/SubClassBana_Cats.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/banaVideos/xxx/MainBana.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/banaVideos/xxx/SubClassBana_Cats.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/xxx/SuperClassBana_Animal.java" />
+        <option value="$PROJECT_DIR$/src/banaVideos/SuperClassBana_Animal.java" />
+        <option value="$PROJECT_DIR$/src/inheritance/banaVideos/SuperClassBana_Animal.java" />
       </list>
     </option>
   </component>
@@ -252,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542664295055" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542664749289" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -269,20 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainBana">
-    <configuration name="ArraysBana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arraysAndHashmaps.ArraysBana" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="arraysAndHashmaps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestSuper1">
     <configuration name="Bana (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="methodsNFunctions.Bana" />
       <module name="practice" />
@@ -317,7 +297,20 @@
       </method>
     </configuration>
     <configuration name="MainBana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inheritance.MainBana" />
+      <option name="MAIN_CLASS_NAME" value="inheritance.banaVideos.xxx.MainBana" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inheritance.banaVideos.xxx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuper1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inheritance.TestSuper1" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
@@ -344,19 +337,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ErrorHandling2" />
-      <item itemvalue="Application.ArraysBana" />
       <item itemvalue="Application.Bana (1)" />
       <item itemvalue="Application.demoFileIO" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.MainBana" />
+      <item itemvalue="Application.TestSuper1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestSuper1" />
         <item itemvalue="Application.MainBana" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.demoFileIO" />
         <item itemvalue="Application.Bana (1)" />
-        <item itemvalue="Application.ArraysBana" />
       </list>
     </recent_temporary>
   </component>
@@ -391,18 +384,18 @@
       <workItem from="1542571270814" duration="3847000" />
       <workItem from="1542615176281" duration="607000" />
       <workItem from="1542617766439" duration="1999000" />
-      <workItem from="1542657520294" duration="5298000" />
+      <workItem from="1542657520294" duration="5729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98455000" />
+    <option name="totallyTimeSpent" value="98886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4283305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4283305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -411,7 +404,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30505416" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30505416" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38967973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,13 +466,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2940">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/demoDrawing.java" />
     <entry file="file://$PROJECT_DIR$/src/forMoreDrawingStuff.java" />
     <entry file="file://$PROJECT_DIR$/src/forTheGraphics.java" />
@@ -762,42 +748,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inheritance/SuperClassBana_Animal.java">
+    <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inheritance/SubClassBana_Cats.java">
+    <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SubClassBana_Cats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inheritance/MainBana.java">
+    <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SuperClassBana_Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="31" column="103" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inheritance/Super.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>

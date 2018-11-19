@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.banaVideos;
 
 public class MainBana {
   public static void main(String[] args) {

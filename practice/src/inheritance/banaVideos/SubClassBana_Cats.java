@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.banaVideos;
 
 public class SubClassBana_Cats extends SuperClassBana_Animal {
  public String favToy = "Yarn"; //Animal class does not have access to it

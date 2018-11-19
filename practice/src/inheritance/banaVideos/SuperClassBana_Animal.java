@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.banaVideos;
 
 public class SuperClassBana_Animal {
   private String name = "Animal";

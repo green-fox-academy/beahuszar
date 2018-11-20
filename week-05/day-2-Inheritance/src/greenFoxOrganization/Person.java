@@ -1,9 +1,9 @@
 package greenFoxOrganization;
 
 public class Person {
-  String name;
-  int age;
-  String gender;
+  private String name;
+  private int age;
+  private String gender;
 
   public Person(String name, int age, String gender) {
     this.name = name;
@@ -25,4 +25,15 @@ public class Person {
     System.out.println("My goal is: Live for the moment");
   }
 
+  protected final String getName() {
+    return this.name;
+  }
+
+  protected final String getGender() {
+    return this.gender;
+  }
+
+  protected final int getAge() {
+    return this.age;
+  }
 }

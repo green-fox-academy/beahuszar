@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/bana/Crashable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/bana/Drivable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/bana/LessonFifteen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/bana/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Zoo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,23 +62,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="144" />
+          <entry key="java" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="144" />
+          <entry key="JAVA" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="46" />
-          <entry key="java" value="14212" />
+          <entry key="java" value="14852" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14212" />
+          <entry key="JAVA" value="14852" />
           <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
@@ -87,92 +87,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Sparrow.java">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Drivable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="63">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Vehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
               <folding>
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Fish.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <element signature="e#111#112#0" expanded="true" />
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Flyable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Chicken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-              <folding>
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Zoo.java">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/bana/LessonFifteen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="e#83#130#0" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interfaces/Bird.java">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Crashable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <element signature="e#111#112#0" expanded="true" />
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#151#152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,11 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Constructors.java" />
-        <option value="$PROJECT_DIR$/src/blog/BlogPost.java" />
-        <option value="$PROJECT_DIR$/src/blog/Blog.java" />
-        <option value="$PROJECT_DIR$/src/blog/Main.java" />
-        <option value="$PROJECT_DIR$/src/Recursions/DavefeinbergTut.java" />
         <option value="$PROJECT_DIR$/src/ClassesAndFieldsTutorial.java" />
         <option value="$PROJECT_DIR$/src/OOP/Earth.java" />
         <option value="$PROJECT_DIR$/src/OOP/NewOperator.java" />
@@ -253,6 +210,11 @@
         <option value="$PROJECT_DIR$/src/interfaces/Fish.java" />
         <option value="$PROJECT_DIR$/src/interfaces/Bird.java" />
         <option value="$PROJECT_DIR$/src/interfaces/Zoo.java" />
+        <option value="$PROJECT_DIR$/src/interfaces/bana/Vechicle.java" />
+        <option value="$PROJECT_DIR$/src/interfaces/bana/Drivable.java" />
+        <option value="$PROJECT_DIR$/src/interfaces/bana/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/interfaces/bana/Crashable.java" />
+        <option value="$PROJECT_DIR$/src/interfaces/bana/LessonFifteen.java" />
       </list>
     </option>
   </component>
@@ -262,7 +224,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
@@ -295,6 +257,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="homeworksNpractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="bana" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -304,7 +273,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542745363069" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542750418004" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -321,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Zoo">
+  <component name="RunManager" selected="Application.LessonFifteen">
     <configuration name="ErrorHandling2" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="errorHandling.ErrorHandling2" />
       <module name="practice" />
@@ -329,12 +298,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuper1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inheritance.TestSuper1" />
+    <configuration name="LessonFifteen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interfaces.bana.LessonFifteen" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="inheritance.superStuff.*" />
+          <option name="PATTERN" value="interfaces.bana.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -396,19 +365,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ErrorHandling2" />
-      <item itemvalue="Application.TestSuper1" />
       <item itemvalue="Application.TestSuper2" />
       <item itemvalue="Application.TestSuper3" />
       <item itemvalue="Application.TestSuper5" />
       <item itemvalue="Application.Zoo" />
+      <item itemvalue="Application.LessonFifteen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LessonFifteen" />
         <item itemvalue="Application.Zoo" />
         <item itemvalue="Application.TestSuper5" />
         <item itemvalue="Application.TestSuper3" />
         <item itemvalue="Application.TestSuper2" />
-        <item itemvalue="Application.TestSuper1" />
       </list>
     </recent_temporary>
   </component>
@@ -446,12 +415,12 @@
       <workItem from="1542657520294" duration="6988000" />
       <workItem from="1542711991752" duration="409000" />
       <workItem from="1542712936735" duration="1689000" />
-      <workItem from="1542739677907" duration="4637000" />
+      <workItem from="1542739677907" duration="6956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106880000" />
+    <option name="totallyTimeSpent" value="109199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="633" y="0" width="653" height="687" extended-state="0" />
@@ -466,7 +435,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30505416" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30505416" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38967973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -528,28 +497,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/arraysAndHashmaps/ArraylistsHw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassesAndFieldsTutorial.java" />
-    <entry file="file://$PROJECT_DIR$/src/OOP/ClassesAndFieldsTutorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demos/demoArraylist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing/CheckboardStars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -875,6 +822,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/Zoo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#83#130#0" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/interfaces/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -888,15 +847,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/Zoo.java">
+    <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Drivable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="63">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Crashable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <element signature="e#83#130#0" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/bana/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/bana/LessonFifteen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>

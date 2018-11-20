@@ -16,6 +16,10 @@ public class Cohort {
     mentors.add(mentor);
   }
 
+  public void info() {
+    System.out.println("The name cohort has " + students.size() + " students and " + mentors.size() + " mentors.");
+  }
+
   Cohort(String name) {
     this.name = name;
     this.students = new ArrayList<>();

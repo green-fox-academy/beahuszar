@@ -7,22 +7,21 @@ The Flower
     eg. watering with 10 the flower's amount of water should only increase with 7.5
 */
 
-public class Flower{
-
-  private double waterLevel;
-  private String color;
+public class Flower extends Plant {
 
   Flower(String color) {
-    this.waterLevel = 0;
-    this.color = color;
+    super(color);
   }
 
-  public void setWaterLevel(double wateramount) {
-    wateramount = waterLevel + (wateramount * 0.75);
+  public void setWaterLevel(double waterAmount) {
+    this.waterLevel = this.waterLevel + (waterAmount * 0.75);
   }
 
-  public double getWaterLevel() {
-    return this.waterLevel;
+
+  public void status() {
+    if (this.getWaterLevel() < 5) {
+      System.out.println("The " + this.getColor() + " Flower needs water");
+    } else System.out.println("The " + this.getColor() + " Flower doesn't need water");
   }
 
 

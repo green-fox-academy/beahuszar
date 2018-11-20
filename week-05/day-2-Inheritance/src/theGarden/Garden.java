@@ -11,22 +11,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Garden {
-  private List<Garden> myGarden;
-  private boolean needswater = true;
 
-  public void watering(List<Garden> myGarden, double wateramount) {
+  public void watering(List<Plant> myGarden, double wateramount) {
 
-    List<Garden> whoNeedsWater = new ArrayList<>();
+    List<Plant> whoNeedsWater = new ArrayList<>();
 
-    for (Garden plant : myGarden) {
-      if (needswater) {
+    for (Plant plant : myGarden) {
+      if (((plant instanceof  Flower) && (plant.getWaterLevel() < 5))
+        ||(plant instanceof  Tree) && (plant.getWaterLevel() < 10)) {
         whoNeedsWater.add(plant);
       }
     }
 
     wateramount = wateramount / whoNeedsWater.size();
 
-    for (Garden plant : whoNeedsWater) {
+    for (Plant plant : whoNeedsWater) {
       if (plant instanceof Flower) {
         ((Flower)plant).setWaterLevel(wateramount);
       } else {

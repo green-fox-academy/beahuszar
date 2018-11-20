@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Flower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Garden.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Garden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-05/day-2-Inheritance/src/theGarden/Tree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +86,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
@@ -106,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SubClassBana_Cats.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -247,7 +249,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542715388565" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542719963406" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -388,12 +390,12 @@
       <workItem from="1542617766439" duration="1999000" />
       <workItem from="1542657520294" duration="6988000" />
       <workItem from="1542711991752" duration="409000" />
-      <workItem from="1542712936735" duration="1093000" />
+      <workItem from="1542712936735" duration="1689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101647000" />
+    <option name="totallyTimeSpent" value="102243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
@@ -774,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/SuperClassBana_Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -796,6 +791,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inheritance/banaVideos/MainBana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

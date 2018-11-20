@@ -25,11 +25,11 @@ public class Main {
 
     student.skipDays(3);
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 3; i++) {
       elon.hire();
     }
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 5; i++) {
       sponsor.hire();
     }
 

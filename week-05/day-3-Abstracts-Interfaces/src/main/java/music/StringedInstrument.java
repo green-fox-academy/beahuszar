@@ -18,6 +18,7 @@ public abstract class StringedInstrument extends Instruments{
 
   @Override
   public void play() {
+    System.out.print(this.name + ", a " + getNumberOfStrings() + "-stringed instrument that goes ");
     sound();
   }
 

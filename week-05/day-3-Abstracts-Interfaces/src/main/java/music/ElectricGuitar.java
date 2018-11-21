@@ -6,17 +6,15 @@ public class ElectricGuitar extends StringedInstrument {
      super();
      setNumberOfStrings(6);
      name = "Electric Guitar";
-     sound = "Twang";
   }
 
   public ElectricGuitar(int numberOfStrings) {
     super(numberOfStrings);
     name = "Electric Guitar";
-    sound = "Twang";
   }
 
   @Override
   public void sound() {
-    System.out.println(this.name + ", a " + getNumberOfStrings() + "-stringed instrument that goes " + sound);
+    System.out.println("Twang");
   }
 }

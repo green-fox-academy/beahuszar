@@ -5,17 +5,15 @@ public class BassGuitar extends StringedInstrument {
     super();
     setNumberOfStrings(4);
     name = "Bass Guitar";
-    sound = "Duum-duum-duum";
   }
 
   public BassGuitar(int numberOfStrings) {
     super(numberOfStrings);
     name = "Bass Guitar";
-    sound = "Duum-duum-duum";
   }
 
   @Override
   public void sound() {
-    System.out.println(this.name + ", a " + getNumberOfStrings() + "-stringed instrument that goes " + sound);
+    System.out.println("Duum-duum-duum");
   }
 }

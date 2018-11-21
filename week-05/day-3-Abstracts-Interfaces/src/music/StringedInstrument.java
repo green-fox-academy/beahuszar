@@ -1,6 +1,4 @@
-package main.java.music;
-
-import com.sun.org.apache.xpath.internal.operations.String;
+package music;
 
 public abstract class StringedInstrument extends Instruments{
   int numberOfStrings;

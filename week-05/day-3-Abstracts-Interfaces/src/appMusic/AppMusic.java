@@ -1,5 +1,7 @@
 package appMusic;
-import main.java.music.*;
+import music.BassGuitar;
+import music.ElectricGuitar;
+import music.Violin;
 
 public class AppMusic {
   public static void main(String[] args) {

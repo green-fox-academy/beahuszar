@@ -1,6 +1,6 @@
 package greenFoxOrganization;
 
-public class Student extends Person {
+public class Student extends Person implements Cloneable {
 
   private String previousOrganization;
   private int skippedDays;
@@ -35,5 +35,8 @@ public class Student extends Person {
     this.skippedDays = this.skippedDays + numberOfDays;
   }
 
-
+  @Override
+  public Student clone() {
+    return new Student(this.getName() + "TheClone",this.getAge(),this.getGender(),this.previousOrganization);
+  }
 }

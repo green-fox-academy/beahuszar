@@ -28,7 +28,7 @@ public class CountLettersTest {
   @Test
   public void testDictionary() {
     testMap = cl.createDictionary(input);
-    assertEquals((int)testMap.get('a'), 3);
+    assertEquals(3, (int)testMap.get('a'));
   }
 
 

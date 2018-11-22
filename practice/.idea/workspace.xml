@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740d0ee6-3748-45d7-9c75-bb8da31537b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../week-05/day-4-OO-Testing/src/apples/Apples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week-05/day-4-OO-Testing/test/apples/ApplesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-05/day-4-OO-Testing/src/apples/Apples.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week-05/day-4-OO-Testing/src/apples/Apples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-05/day-4-OO-Testing/test/ApplesTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -171,8 +173,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -377,7 +379,7 @@
       <workItem from="1542739677907" duration="7131000" />
       <workItem from="1542797168935" duration="45000" />
       <workItem from="1542827706571" duration="2092000" />
-      <workItem from="1542879322182" duration="945000" />
+      <workItem from="1542879322182" duration="1216000" />
     </task>
     <servers />
   </component>
@@ -402,7 +404,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112456000" />
+    <option name="totallyTimeSpent" value="112727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />

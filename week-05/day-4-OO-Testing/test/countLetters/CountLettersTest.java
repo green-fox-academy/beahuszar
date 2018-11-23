@@ -16,17 +16,16 @@ public class CountLettersTest {
   public void initialize() {
     input = "karalabe";
     cl = new CountLetters();
+    testMap = cl.createDictionary(input);
   }
 
   @Test
-  public void createDictionary() {
-    testMap = cl.createDictionary(input);
+  public void testMapSize() {
     assertThat(testMap.size(), is(6));
   }
 
   @Test
-  public void testDictionary() {
-    testMap = cl.createDictionary(input);
+  public void testDuplicateChar() {
     assertEquals(3, (int)testMap.get('a'));
   }
 

@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'jetbrains'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testcompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+}

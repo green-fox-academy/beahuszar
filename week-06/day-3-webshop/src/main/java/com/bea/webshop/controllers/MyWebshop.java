@@ -2,7 +2,9 @@ package com.bea.webshop.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -78,9 +80,21 @@ public class MyWebshop {
   public String getMostExpensive(Model model) {
     Item mostExpensive = items
         .stream()
-        .max(Comparator.comparing(Item::getPrice)).get();
+        .max(Comparator.comparing(Item::getPrice))
+        .get();
 
     model.addAttribute("items", mostExpensive);
+    return "webshop";
+  }
+
+  @PostMapping(value="/search")
+  public String getKeyWord(String keyWord, Model model) {
+    List<Item> searchedItems = items
+        .stream()
+        .filter(items -> items.getName().toLowerCase().contains(keyWord))
+        .filter(items -> items.getDescription().toLowerCase().contains(keyWord))
+        .collect(Collectors.toList());
+    model.addAttribute("items", searchedItems);
     return "webshop";
   }
 }

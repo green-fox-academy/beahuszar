@@ -27,8 +27,10 @@
     </div>
     <div class="searchbar">
         <label>Search for:</label>
-        <input type="text" placeholder="...something like nike">
-        <button type="submit">Search</button>
+        <form action="http://localhost:8080/search" method="post">
+            <input name="keyWord" type="text" placeholder="...something like nike">
+            <button type="submit">Search</button>
+        </form>
     </div>
     <table>
         <tr>

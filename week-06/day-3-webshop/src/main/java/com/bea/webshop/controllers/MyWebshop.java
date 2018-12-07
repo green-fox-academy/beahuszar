@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -63,14 +64,13 @@ public class MyWebshop {
   }
 
   @RequestMapping(value="/average-stock")
-  public String getAvergaeStock(Model model) {
-    double countOfUniqueItems = items.size();
-    double countOfStock = items
+  public String getAverageStock(Model model) {
+    DoubleSummaryStatistics onStock = items
         .stream()
-        .collect(Collectors.summingInt(Item::getQuantityOnStock));
-    double averageStock = countOfStock / countOfUniqueItems;
+        .mapToDouble(Item::getQuantityOnStock)
+        .summaryStatistics();
 
-    model.addAttribute("average", averageStock);
+    model.addAttribute("average", onStock.getAverage());
     return "average";
   }
 

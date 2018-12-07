@@ -51,4 +51,23 @@ public class MyWebshop {
     model.addAttribute("items", sorted);
     return "webshop";
   }
+
+  @RequestMapping(value="/contains-nike")
+  public String getNikeProducts(Model model) {
+    List<Item> nikes = items
+        .stream()
+        .filter(nikeItems -> nikeItems.getDescription().toLowerCase().contains("nike"))
+        .collect(Collectors.toList());
+    model.addAttribute("items", nikes);
+    return "webshop";
+  }
+
+  @RequestMapping(value="/average-stock")
+  public String getAvergaeStock(Model model) {
+    List<Item> nikes = items
+        .stream()
+        .filter(nikeItems -> nikeItems.getDescription().toLowerCase().contains("nike"))
+        .collect(Collectors.toList());
+    model.addAttribute("items", nikes);
+    return "webshop";
 }

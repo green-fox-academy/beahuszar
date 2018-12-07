@@ -1,20 +1,22 @@
-package com.bea.webshop;
+package com.bea.webshop.controllers;
 
+import java.util.ArrayList;
 import java.util.Currency;
+import java.util.List;
 
-public class Item extends Shop {
+public class Item {
 
   private String name;
   private String description;
-  private Currency currency;
-  private String price;
+//  private Currency currency;
+  private int price;
   private int quantityOnStock;
 
-  public Item(String name, String description, String price, int quantityOnStock) {
+  public Item(String name, String description, int price, int quantityOnStock) {
     this.name = name;
     this.description = description;
-    this.currency = Currency.getInstance("Kd");
-    this.price = price + this.currency;
+//    this.currency = Currency.getInstance("Kd");
+    this.price = price;
     this.quantityOnStock = quantityOnStock;
   }
 
@@ -25,12 +27,12 @@ public class Item extends Shop {
   public String getDescription() {
     return description;
   }
-
+/*
   public Currency getCurrency() {
     return currency;
-  }
+  }*/
 
-  public String getPrice() {
+  public int getPrice() {
     return price;
   }
 

@@ -33,13 +33,11 @@ public class MyWebshop {
 
   @RequestMapping(value="/only-available")
   public String getOnlyAvailable(Model model) {
-    List<Item> onlyAvailable = new ArrayList<>();
+    List<Item> onlyAvailable = items
+        .stream()
+        .filter(onStock -> onStock.getQuantityOnStock() > 0)
+        .collect(Collectors.toList());
 
-    for (Item item : items) {
-      if (item.getQuantityOnStock() != 0) {
-        onlyAvailable.add(item);
-      }
-    }
     model.addAttribute("items", onlyAvailable);
     return "webshop";
   }

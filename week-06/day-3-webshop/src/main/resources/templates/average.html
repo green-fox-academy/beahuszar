@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<head>My Shop</head>
+<div id="filters">
+    <form action="http://localhost:8080/only-available">
+        <button type="submit">ONLY AVAILABLE</button>
+    </form>
+    <form action="http://localhost:8080/cheapest-first">
+        <button type="submit">CHEAPEST FIRST</button>
+    </form>
+    <form action="http://localhost:8080/contains-nike">
+        <button type="submit">CONTAINS NIKE</button>
+    </form>
+    <button type="submit">AVERAGE STOCK</button>
+    <button type="submit">MOST EXPENSIVE AVAILABLE</button>
+</div>
+<div class="searchbar">
+    <label>Search for:</label>
+    <input type="text" placeholder="...something like nike">
+    <button type="submit">Search</button>
+</div>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity of stock</th>
+    </tr>
+</table>
+<p th:text="'Average stock: ' + ${average}"/>
+</body>
+</html>

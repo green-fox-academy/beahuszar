@@ -64,10 +64,23 @@ public class MyWebshop {
 
   @RequestMapping(value="/average-stock")
   public String getAvergaeStock(Model model) {
-    List<Item> nikes = items
+    double countOfUniqueItems = items.size();
+    double countOfStock = items
         .stream()
-        .filter(nikeItems -> nikeItems.getDescription().toLowerCase().contains("nike"))
-        .collect(Collectors.toList());
-    model.addAttribute("items", nikes);
+        .collect(Collectors.summingInt(Item::getQuantityOnStock));
+    double averageStock = countOfStock / countOfUniqueItems;
+
+    model.addAttribute("average", averageStock);
+    return "average";
+  }
+
+  @RequestMapping(value="/most-expensive")
+  public String getMostExpensive(Model model) {
+    Item mostExpensive = items
+        .stream()
+        .max(Comparator.comparing(Item::getPrice)).get();
+
+    model.addAttribute("items", mostExpensive);
     return "webshop";
+  }
 }

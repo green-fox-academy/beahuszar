@@ -5,11 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 public class MyWebshop {
-  Item item;
   List<Item> items;
 
   public MyWebshop() {
@@ -23,8 +24,31 @@ public class MyWebshop {
 
 
   @RequestMapping(value="/webshop")
-  public String greeting(Model model) {
+  public String webshop(Model model) {
     model.addAttribute("items", items);
+    return "webshop";
+  }
+
+  @RequestMapping(value="/only-available")
+  public String getOnlyAvailable(Model model) {
+    List<Item> onlyAvailable = new ArrayList<>();
+
+    for (Item item : items) {
+      if (item.getQuantityOnStock() != 0) {
+        onlyAvailable.add(item);
+      }
+    }
+    model.addAttribute("items", onlyAvailable);
+    return "webshop";
+  }
+
+  @RequestMapping(value="/cheapest-first")
+  public String getCheapestFirst(Model model) {
+    List<Item> sorted = items
+        .stream()
+        .sorted(Comparator.comparing(Item::getPrice))
+        .collect(Collectors.toList());
+    model.addAttribute("items", sorted);
     return "webshop";
   }
 }

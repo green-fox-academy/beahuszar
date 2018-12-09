@@ -8,14 +8,12 @@ public class Item {
 
   private String name;
   private String description;
-//  private Currency currency;
   private int price;
   private int quantityOnStock;
 
   public Item(String name, String description, int price, int quantityOnStock) {
     this.name = name;
     this.description = description;
-//    this.currency = Currency.getInstance("Kd");
     this.price = price;
     this.quantityOnStock = quantityOnStock;
   }
@@ -27,10 +25,6 @@ public class Item {
   public String getDescription() {
     return description;
   }
-/*
-  public Currency getCurrency() {
-    return currency;
-  }*/
 
   public int getPrice() {
     return price;

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <head>My Shop</head>
+    <header>My Shop</header>
     <div id="filters">
         <form action="http://localhost:8080/only-available">
             <button type="submit">ONLY AVAILABLE</button>
@@ -25,7 +26,7 @@
             <button type="submit">MOST EXPENSIVE AVAILABLE</button>
         </form>
     </div>
-    <div class="searchbar">
+    <div id="searchbar">
         <label>Search for:</label>
         <form action="http://localhost:8080/search" method="post">
             <input name="keyWord" type="text" placeholder="...something like nike">

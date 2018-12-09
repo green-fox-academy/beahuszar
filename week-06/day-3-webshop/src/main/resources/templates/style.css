@@ -1,0 +1,62 @@
+body {
+    margin-left: 15%;
+    margin-right: 30%;
+}
+header {
+    color: skyblue;
+    font-size: 30px;
+    border-bottom: 1px skyblue solid; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    margin: 0;
+    float: left;
+    outline: none;
+}
+
+#filters button {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+#searchbar {
+    padding-top: 40px;
+    color: red;
+}
+
+#searchbar button {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 3px;
+    margin-right: 5px;
+    font-size: 25px;
+    float: right;
+}
+
+#searchbar input {
+   border: 2px red solid; 
+   border-radius: 5px;
+   height: 30px;
+   outline: none;
+   width: 85%;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+
+table th {
+   background-color: aqua;
+   width: 100%; 
+}

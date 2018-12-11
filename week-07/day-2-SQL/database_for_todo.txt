@@ -1,0 +1,125 @@
+husza@LAPTOP-9HIG7BNG MINGW64 ~
+
+$ winpty mysql -u root -p
+Enter password: *********
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| beatest            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+7 rows in set (0.01 sec)
+
+mysql> create database beasToDo;
+Query OK, 1 row affected (0.11 sec)
+
+mysql> use beasToDo
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| beastodo   |
++------------+
+1 row in set (0.00 sec)
+
+mysql> create table items(
+    -> itemID int unsigned not null auto_increment primary key,
+    -> itemDesc varchar(100) not null,
+    -> completion boolean default false not null,
+    -> deadline date not null,
+    -> entryDate timestamp);
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> describe student;
+ERROR 1146 (42S02): Table 'beastodo.student' doesn't exist
+mysql> describe items;
++------------+------------------+------+-----+---------+----------------+
+| Field      | Type             | Null | Key | Default | Extra          |
++------------+------------------+------+-----+---------+----------------+
+| itemID     | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| itemDesc   | varchar(100)     | NO   |     | NULL    |                |
+| completion | tinyint(1)       | NO   |     | 0       |                |
+| deadline   | date             | NO   |     | NULL    |                |
+| entryDate  | timestamp        | YES  |     | NULL    |                |
++------------+------------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_beastodo |
++--------------------+
+| items              |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> insert into beastodo(itemDesc, deadline) values("feed the cat",'2018-12-30');
+
+ERROR 1146 (42S02): Table 'beastodo.beastodo' doesn't exist
+mysql> insert into items(itemDesc, deadline) values("feed the cat",'2018-12-30');
+Query OK, 1 row affected (0.10 sec)
+
+mysql> select * from items;
++--------+--------------+------------+------------+-----------+
+| itemID | itemDesc     | completion | deadline   | entryDate |
++--------+--------------+------------+------------+-----------+
+|      1 | feed the cat |          0 | 2018-12-30 | NULL      |
++--------+--------------+------------+------------+-----------+
+1 row in set (0.00 sec)
+
+mysql> alter table beastodo modify column entryDate timestamp default current_timest
+amp;
+ERROR 1146 (42S02): Table 'beastodo.beastodo' doesn't exist
+mysql> alter table items modify column entryDate timestamp default current_timestamp
+;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe items;
++------------+------------------+------+-----+-------------------+------------------
+-+
+| Field      | Type             | Null | Key | Default           | Extra
+ |
++------------+------------------+------+-----+-------------------+------------------
+-+
+| itemID     | int(10) unsigned | NO   | PRI | NULL              | auto_increment
+ |
+| itemDesc   | varchar(100)     | NO   |     | NULL              |
+ |
+| completion | tinyint(1)       | NO   |     | 0                 |
+ |
+| deadline   | date             | NO   |     | NULL              |
+ |
+| entryDate  | timestamp        | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED
+ |
++------------+------------------+------+-----+-------------------+------------------
+-+
+5 rows in set (0.00 sec)
+
+mysql> select * from items;
++--------+--------------+------------+------------+-----------+
+| itemID | itemDesc     | completion | deadline   | entryDate |
++--------+--------------+------------+------------+-----------+
+|      1 | feed the cat |          0 | 2018-12-30 | NULL      |
++--------+--------------+------------+------------+-----------+
+1 row in set (0.00 sec)
+
+mysql> insert into items(itemDesc, deadline) values("learn programming",'2018-03-15'
+);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> select * from items;
++--------+-------------------+------------+------------+---------------------+
+| itemID | itemDesc          | completion | deadline   | entryDate           |
++--------+-------------------+------------+------------+---------------------+
+|      1 | feed the cat      |          0 | 2018-12-30 | NULL                |
+|      2 | learn programming |          0 | 2018-03-15 | 2018-12-11 16:09:27 |
++--------+-------------------+------------+------------+---------------------+
+2 rows in set (0.00 sec)

@@ -21,8 +21,10 @@ public class SimbaController {
   }
 
   @RequestMapping(path = "/ception", method = RequestMethod.GET )
-  @ResponseBody
-  public String showCeption() {
-    return "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>";
+  public String showCeption(Model model) {
+    String text = "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>";
+
+    model.addAttribute("text",text);
+    return "ception";
   }
 }

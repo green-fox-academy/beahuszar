@@ -3,7 +3,7 @@
 <head>
     <title>table</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" th:href="@{style.css}" media="all"/>
+    <link rel="stylesheet" type="text/css" th:href="@{style.css}"/>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
         <td th:text="${account.getAnimalType()}"></td>
         <td th:text="${account.getBalance()}"></td>
         <td th:text="${accountStat.index}"></td>
-        <td th:if="${account.getIsKing()}" th:text="'DA KIIIIING'"></td>
+        <td id="king" th:if="${account.getIsKing()}" th:text="'DA KIIIIING'"></td>
         <td th:unless="${account.getIsKing()}" th:text="''"></td>
         <td th:if="${account.getMotives()}" th:text="'Good One'"></td>
         <td th:unless="${account.getMotives()}" th:text="'Bad Guy'"></td>

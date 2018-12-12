@@ -1,4 +1,4 @@
-package com.example.dependencies;
+package com.example.dependencies.fancyWriter_Erik;
 
 import org.springframework.stereotype.Component;
 

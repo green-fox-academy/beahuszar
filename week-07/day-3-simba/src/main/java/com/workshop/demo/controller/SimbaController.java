@@ -3,10 +3,7 @@ package com.workshop.demo.controller;
 import com.workshop.demo.model.BankAccount;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,5 +41,15 @@ public class SimbaController {
   public String showTable(Model model) {
     model.addAttribute("accounts",bankAccounts);
     return "table";
+  }
+
+  @PostMapping("/increment")
+  public String incrementAccount(String id) {
+    if (bankAccounts.get(Integer.parseInt(id)).getIsKing()) {
+      bankAccounts.get(Integer.parseInt(id)).setBalance(100);
+    } else {
+      bankAccounts.get(Integer.parseInt(id)).setBalance(10);
+    }
+    return "redirect:/table";
   }
 }

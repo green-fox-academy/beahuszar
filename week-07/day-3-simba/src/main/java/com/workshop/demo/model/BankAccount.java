@@ -34,4 +34,8 @@ public class BankAccount {
   public boolean getMotives() {
     return motives;
   }
+
+  public void setBalance(double balance) {
+    this.balance += balance;
+  }
 }

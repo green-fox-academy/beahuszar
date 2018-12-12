@@ -8,8 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 public class SimbaController {
+  List<BankAccount> bankAccounts = new ArrayList<>();
+
+  public SimbaController() {
+    bankAccounts.add(new BankAccount("Nala", 30000, "lion"));
+    bankAccounts.add(new BankAccount("Zazoo", 30, "Red-billed hornbill"));
+    bankAccounts.add(new BankAccount("Pumba", 7323487, "boar"));
+    bankAccounts.add(new BankAccount("Timon", 1234, "meerkat"));
+  }
 
   @RequestMapping(path = "/show", method = RequestMethod.GET )
   public String showAccount(Model model) {
@@ -26,5 +37,11 @@ public class SimbaController {
 
     model.addAttribute("text",text);
     return "ception";
+  }
+
+  @RequestMapping(path = "/table", method = RequestMethod.GET )
+  public String showTable(Model model) {
+    model.addAttribute("accounts",bankAccounts);
+    return "table";
   }
 }

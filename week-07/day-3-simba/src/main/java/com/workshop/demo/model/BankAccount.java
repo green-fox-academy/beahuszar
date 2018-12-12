@@ -5,9 +5,9 @@ public class BankAccount {
   private double balance;
   private String animalType;
   private boolean isKing;
-  private String motives;
+  private boolean motives;
 
-  public BankAccount(String name, double balance, String animalType, boolean isKing, String motives) {
+  public BankAccount(String name, double balance, String animalType, boolean isKing, boolean motives) {
     this.name = name;
     this.balance = balance;
     this.animalType = animalType;
@@ -31,7 +31,7 @@ public class BankAccount {
     return isKing;
   }
 
-  public String getMotives() {
+  public boolean getMotives() {
     return motives;
   }
 }

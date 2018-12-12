@@ -23,10 +23,9 @@
         <td th:text="${accountStat.index}"></td>
         <td th:if="${account.getIsKing()}" th:text="'DA KIIIIING'"></td>
         <td th:unless="${account.getIsKing()}" th:text="''"></td>
-        <th:block th:switch="${account.getMotives()}">
-            <td th:case="'villain'" th:text="'Bad Guy'"></td>
-            <td th:case="'good'" th:text="'Good One'"></td>
-        </th:block>
+        <td th:if="${account.getMotives()}" th:text="'Good One'"></td>
+        <td th:unless="${account.getMotives()}" th:text="'Bad Guy'"></td>
+
 
 
     </tr>

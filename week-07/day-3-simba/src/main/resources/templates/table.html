@@ -12,6 +12,7 @@
         <th>Name</th>
         <th>Animal type</th>
         <th>Balance</th>
+        <th>Index</th>
         <th>isKing</th>
         <th>Good or bad</th>
     </tr>
@@ -19,6 +20,7 @@
         <td th:text="${account.getName()}"></td>
         <td th:text="${account.getAnimalType()}"></td>
         <td th:text="${account.getBalance()}"></td>
+        <td th:text="${accountStat.index}"></td>
         <td th:if="${account.getIsKing()}" th:text="'DA KIIIIING'"></td>
         <td th:unless="${account.getIsKing()}" th:text="''"></td>
         <th:block th:switch="${account.getMotives()}">

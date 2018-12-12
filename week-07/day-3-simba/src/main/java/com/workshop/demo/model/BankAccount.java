@@ -1,9 +1,9 @@
 package com.workshop.demo.model;
 
 public class BankAccount {
-  public String name;
-  public double balance;
-  public String animalType;
+  private String name;
+  private double balance;
+  private String animalType;
 
   public BankAccount(String name, double balance, String animalType) {
     this.name = name;
@@ -11,5 +11,15 @@ public class BankAccount {
     this.animalType = animalType;
   }
 
+  public String getName() {
+    return name;
+  }
 
+  public double getBalance() {
+    return balance;
+  }
+
+  public String getAnimalType() {
+    return animalType;
+  }
 }

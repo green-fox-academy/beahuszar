@@ -1,6 +1,5 @@
 package com.greenfoxacademy.tamagotchi.controller;
 
-import com.greenfoxacademy.tamagotchi.repository.PetRepo;
 import com.greenfoxacademy.tamagotchi.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,7 +29,6 @@ public class TamagotchiController {
   @PostMapping("/login")
   public String login(String nickname) {
     String temp = loginService.checkName(nickname);
-    System.out.println(loginService.getPetRepo().getPetList().size());
     return temp;
   }
 }

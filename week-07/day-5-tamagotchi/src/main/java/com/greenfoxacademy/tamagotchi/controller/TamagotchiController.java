@@ -28,7 +28,6 @@ public class TamagotchiController {
 
   @PostMapping("/login")
   public String login(String nickname) {
-    String temp = loginService.checkName(nickname);
-    return temp;
+    return loginService.checkName(nickname);;
   }
 }

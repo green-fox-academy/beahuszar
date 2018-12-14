@@ -22,7 +22,6 @@ public class PetRepo {
   }
 
  public boolean isDuplicate(String name) {
-   System.out.println(petList.size());
    for (Pet pet : petList) {
      System.out.println("cica");
      if (pet.getName().equals(name)) {

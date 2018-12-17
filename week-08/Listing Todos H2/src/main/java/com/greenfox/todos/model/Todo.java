@@ -1,4 +1,4 @@
-package com.greenfox.todos.repository;
+package com.greenfox.todos.model;
 
 public class Todo {
    long id;

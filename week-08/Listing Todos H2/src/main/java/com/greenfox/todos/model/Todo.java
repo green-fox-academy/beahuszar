@@ -1,17 +1,27 @@
 package com.greenfox.todos.model;
 
-public class Todo {
-   long id;
-   String title;
-   boolean urgent;
-   boolean done;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-  public Todo(long id, String title) {
-    this.id = id;
+@Entity
+public class Todo {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  long id;
+  String title;
+  boolean urgent;
+  boolean done;
+
+  public Todo(String title) {
     this.title = title;
     this.urgent = false;
     this.done = false;
   }
+
+
 
 
 }

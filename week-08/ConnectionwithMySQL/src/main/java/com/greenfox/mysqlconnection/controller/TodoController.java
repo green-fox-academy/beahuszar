@@ -26,16 +26,12 @@ public class TodoController {
   public String list(@RequestParam(value = "isActive", required = false) boolean isActive, Model model) {
     if (isActive) {
       model.addAttribute("todos",service.getActiveOnly());
+      model.addAttribute("todo",new Todo());
     } else {
       model.addAttribute("todos",service.getTodoList());
+      model.addAttribute("todo",new Todo());
     }
     return "todolist";
-  }
-
-  @GetMapping("/new")
-  public String addForm(Model model) {
-    model.addAttribute("todo",new Todo());
-    return "add";
   }
 
   @PostMapping("/new")

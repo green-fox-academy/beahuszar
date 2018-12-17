@@ -34,6 +34,12 @@ public class TodoController {
     return "todolist";
   }
 
+  @GetMapping("/new")
+  public String addform (Model model) {
+    model.addAttribute("todo", new Todo());
+    return "add";
+  }
+
   @PostMapping("/new")
   public String addNewTodo(@ModelAttribute Todo todo) {
     service.addTodo(todo);

@@ -30,7 +30,6 @@ public class Todo {
     this.isDone = isDone;
   }
 
-
   public long getId() {
     return id;
   }
@@ -56,10 +55,10 @@ public class Todo {
   }
 
   public void setUrgent(boolean urgent) {
-    this.isUrgent = urgent;
+    isUrgent = urgent;
   }
 
   public void setDone(boolean done) {
-    this.isDone = done;
+    isDone = done;
   }
 }

@@ -26,24 +26,6 @@ public class TodoService {
     }
   }
 
-  public Todo updateToDo(long id, String title, boolean isUrgent, boolean isDone) {
-    Todo todo = todoRepository.findById(id).orElse(null);
-    if(title.length() != 0) {
-      todo.setTitle(title);
-    }
-    if(isDone) {
-      todo.setDone(true);
-    } else {
-      todo.setDone(false);
-    }
-    if(isUrgent) {
-      todo.setUrgent(true);
-    } else {
-      todo.setUrgent(false);
-    }
-    return todo;
-  }
-
   public List<Todo> getTodoList() {
     List<Todo> todoList = new ArrayList<>();
     todoRepository.findAll().forEach(todoList::add);

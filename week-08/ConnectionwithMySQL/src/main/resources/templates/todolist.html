@@ -13,12 +13,13 @@
         <th>Urgent</th>
         <th>Done</th>
         <th>Delete item</th>
+        <th>Edit item</th>
     </tr>
     <tr th:each="todo : ${todos}" >
-        <td th:text="${todo.id}"></td>
-        <td th:text="${todo.title}"></td>
-        <td th:text="${todo.isUrgent}"></td>
-        <td th:text="${todo.isDone}"></td>
+        <td th:text="${todo.getId()}"></td>
+        <td th:text="${todo.getTitle()}"></td>
+        <td th:text="${todo.isUrgent()}"></td>
+        <td th:text="${todo.isDone()}"></td>
         <td>
             <a th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
         </td>

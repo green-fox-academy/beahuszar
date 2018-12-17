@@ -13,6 +13,7 @@ public class TodosApplication implements CommandLineRunner {
 
   TodoService service;
 
+  @Autowired
   public TodosApplication(TodoService service) {
     this.service = service;
   }

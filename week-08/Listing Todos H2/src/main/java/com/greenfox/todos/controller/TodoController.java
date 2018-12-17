@@ -19,6 +19,7 @@ public class TodoController {
 
   TodoService service;
 
+  @Autowired
   public TodoController(TodoService service) {
     this.service = service;
   }

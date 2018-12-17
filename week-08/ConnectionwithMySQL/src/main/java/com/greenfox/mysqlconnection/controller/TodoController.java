@@ -26,10 +26,8 @@ public class TodoController {
   public String list(@RequestParam(value = "isActive", required = false) boolean isActive, Model model) {
     if (isActive) {
       model.addAttribute("todos",service.getActiveOnly());
-      model.addAttribute("todo",new Todo());
     } else {
       model.addAttribute("todos",service.getTodoList());
-      model.addAttribute("todo",new Todo());
     }
     return "todolist";
   }
@@ -43,6 +41,12 @@ public class TodoController {
   @PostMapping("/new")
   public String addNewTodo(@ModelAttribute Todo todo) {
     service.addTodo(todo);
+    return "redirect:/todo/";
+  }
+
+  @GetMapping("/{id}/delete")
+  public String delete(@PathVariable long id) {
+    service.deleteToDoById(id);
     return "redirect:/todo/";
   }
 }

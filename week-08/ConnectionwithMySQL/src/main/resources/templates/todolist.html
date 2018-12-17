@@ -12,12 +12,16 @@
         <th>Description</th>
         <th>Urgent</th>
         <th>Done</th>
+        <th>Delete item</th>
     </tr>
     <tr th:each="todo : ${todos}" >
         <td th:text="${todo.id}"></td>
         <td th:text="${todo.title}"></td>
         <td th:text="${todo.urgent}"></td>
         <td th:text="${todo.done}"></td>
+        <td>
+            <a th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
+        </td>
     </tr>
 </table>
 </body>

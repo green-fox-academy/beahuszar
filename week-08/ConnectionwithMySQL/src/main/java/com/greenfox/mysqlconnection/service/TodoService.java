@@ -40,4 +40,8 @@ public class TodoService {
     return activeOnly;
   }
 
+  public void deleteToDoById(long id) {
+    todoRepository.deleteById(id);
+  }
+
 }

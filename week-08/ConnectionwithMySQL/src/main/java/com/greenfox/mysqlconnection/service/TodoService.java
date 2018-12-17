@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class TodoService {
@@ -29,5 +30,13 @@ public class TodoService {
     List<Todo> todoList = new ArrayList<>();
     todoRepository.findAll().forEach(todoList::add);
     return todoList;
+  }
+
+  public List<Todo> getActiveOnly() {
+    List<Todo> activeOnly = getTodoList()
+        .stream()
+        .filter(todo -> !todo.isDone())
+        .collect(Collectors.toList());
+    return activeOnly;
   }
 }

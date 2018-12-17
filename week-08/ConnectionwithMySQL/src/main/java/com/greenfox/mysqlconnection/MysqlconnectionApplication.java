@@ -24,6 +24,8 @@ public class MysqlconnectionApplication implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
     service.addTodo(new Todo("proba"));
+    service.addTodo(new Todo("wear ugly sweater on the Xmas Party",true, false));
+    service.addTodo(new Todo("petting the class' dog",true, true));
   }
 }
 

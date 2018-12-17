@@ -25,7 +25,6 @@ public class TodoService {
   public List<Todo> getTodoList() {
     List<Todo> todoList = new ArrayList<>();
     todoRepository.findAll().forEach(todoList::add);
-
     return todoList;
   }
 }

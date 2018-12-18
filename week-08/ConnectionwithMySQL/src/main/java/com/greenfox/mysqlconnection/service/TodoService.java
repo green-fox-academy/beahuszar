@@ -35,7 +35,7 @@ public class TodoService {
   public List<Todo> getActiveOnly() {
     List<Todo> activeOnly = getTodoList()
         .stream()
-        .filter(todo -> !todo.isDone())
+        .filter(todo -> !todo.getIsDone())
         .collect(Collectors.toList());
     return activeOnly;
   }

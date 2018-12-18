@@ -53,8 +53,8 @@ public class TodoController {
   }
 
   @PostMapping("/{id}/edit")
-  public String postEdit(@ModelAttribute Todo todo, @PathVariable long id) {
-    service.addTodo(service.getToDoById(id));
+  public String postEdit(@ModelAttribute Todo todo) {
+    service.addTodo(todo);
     return "redirect:/todo/";
   }
 }

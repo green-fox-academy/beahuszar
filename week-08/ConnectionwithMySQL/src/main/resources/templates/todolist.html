@@ -6,6 +6,12 @@
 </head>
 <body>
 <a href="/todo/new">add new todo</a>
+
+<label>Search To-do's</label>
+<form th:action="@{/todo/search}" action="GET">
+    <input type="text" name="text" id="text" placeholder="find by keyword">
+    <button>Search</button>
+</form>
 <table border="1">
     <tr>
         <th>ID</th>

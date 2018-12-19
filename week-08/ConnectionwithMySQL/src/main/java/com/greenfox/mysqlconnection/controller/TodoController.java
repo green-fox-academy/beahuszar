@@ -57,4 +57,10 @@ public class TodoController {
     service.addTodo(todo);
     return "redirect:/todo/";
   }
+
+  @GetMapping("/search")
+  public String searchToDo(@RequestParam(value = "text") String text, Model model) {
+    model.addAttribute("todos", service.findToDoByKeyWord(text));
+    return "todolist";
+  }
 }

@@ -48,4 +48,7 @@ public class TodoService {
     return todoRepository.findById(id).orElse(null);
   }
 
+  public List<Todo> findToDoByKeyWord(String text) {
+    return todoRepository.findTodosByTitleContaining(text);
+  }
 }

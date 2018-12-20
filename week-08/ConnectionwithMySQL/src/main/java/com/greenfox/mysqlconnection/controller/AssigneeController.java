@@ -21,18 +21,20 @@ public class AssigneeController {
   @GetMapping("/")
   public String view(Model model) {
     model.addAttribute("assigneeList", assigneeService.getListOfAssignee());
-    return "assignee";
+    return "assignee/assignee";
   }
 
   @GetMapping("/edit/{id}")
   public String editAssignee(@PathVariable long id, Model model) {
     model.addAttribute("assignee", assigneeService.getAssignee(id));
-    return "assignee/edit";
+    return "assignee/editAssignee";
   }
 
   @PostMapping("/edit/{id}")
   public String editAssignee(@ModelAttribute Assignee assignee) {
     assigneeService.saveAssignees(assignee);
-    return "editAssignee";
+    return "redirect:/todo/assignee/";
   }
+
+  
 }

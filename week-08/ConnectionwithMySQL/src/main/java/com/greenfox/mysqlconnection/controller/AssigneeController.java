@@ -53,4 +53,10 @@ public class AssigneeController {
     assigneeService.saveAssignees(assignee);
     return "redirect:/todo/assignee/";
   }
+
+  @GetMapping("/assigneetodo/{id}")
+  public String listTodosByAssignee(@PathVariable long id, Model model) {
+    model.addAttribute("todos", assigneeService.getTodosByAsignee(id));
+    return "assignee/todobyassignee";
+  }
 }

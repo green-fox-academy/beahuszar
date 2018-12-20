@@ -1,6 +1,7 @@
 package com.greenfox.mysqlconnection.service;
 
 import com.greenfox.mysqlconnection.model.Assignee;
+import com.greenfox.mysqlconnection.model.Todo;
 import com.greenfox.mysqlconnection.repository.AssigneeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,5 +38,11 @@ public class AssigneeService {
   public void deleteAssignee(long id) {
     assigneeRepository.findById(id).get().getTodoList().forEach(todo -> todo.setAssignee(null));
     assigneeRepository.deleteById(id);
+  }
+
+  public List<Todo> getTodosByAsignee(long id) {
+    List<Todo> todoList = new ArrayList<>();
+    assigneeRepository.findById(id).get().getTodoList().forEach(todoList::add);
+    return todoList;
   }
 }

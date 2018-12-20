@@ -27,7 +27,11 @@
     <tr th:each="todo : ${todos}" >
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
-        <td th:text="${todo.assignee} ? ${todo.getAssignee().getFirstName()} : ''"></td>
+        <td>
+            <a th:text="${todo.assignee} ? ${todo.getAssignee().getFirstName()}"
+               th:href="${todo.assignee} ? @{/todo/assignee/assigneetodo/{id}(id=${todo.assignee.getId()})}">
+            </a>
+        </td>
         <td th:text="${todo.assignee} ? ${todo.getAssignee().getLastName()} : ''"></td>
         <td th:text="${todo.assignee} ? ${todo.getAssignee().getEmail()} : ''"></td>
         <td th:text="${todo.getIsUrgent()}"></td>

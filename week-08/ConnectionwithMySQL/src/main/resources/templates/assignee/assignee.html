@@ -15,7 +15,7 @@
         <th>Delete Assignee</th>
     </tr>
     <tr th:each="assignee : ${assigneeList}">
-        <td th:text="${assignee.getFirstName()}"></td>
+        <td th:text="${assignee.getFirstName()}">
         <td th:text="${assignee.getLastName()}"></td>
         <td th:text="${assignee.getEmail()}"></td>
         <td>

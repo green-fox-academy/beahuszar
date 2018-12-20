@@ -1,11 +1,10 @@
 package com.greenfox.mysqlconnection.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@Table(name = "assignees")
 public class Assignee {
 
   @Id
@@ -14,6 +13,9 @@ public class Assignee {
   private String firstName;
   private String lastName;
   private String email;
+
+  @OneToMany (mappedBy = "assignee")
+  private List<Todo> todoList;
 
   public Assignee() {
   }
@@ -54,5 +56,13 @@ public class Assignee {
 
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  public List<Todo> getTodoList() {
+    return todoList;
+  }
+
+  public void setTodoList(List<Todo> todoList) {
+    this.todoList = todoList;
   }
 }

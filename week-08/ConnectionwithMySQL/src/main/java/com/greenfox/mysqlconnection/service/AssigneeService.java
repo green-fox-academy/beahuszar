@@ -35,6 +35,7 @@ public class AssigneeService {
   }
 
   public void deleteAssignee(long id) {
+    assigneeRepository.findById(id).get().getTodoList().forEach(todo -> todo.setAssignee(null));
     assigneeRepository.deleteById(id);
   }
 }

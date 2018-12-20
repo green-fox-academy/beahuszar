@@ -10,6 +10,9 @@
     <input type="text" th:field="*{title}">
     <input type="checkbox" th:field="*{isDone}">Done<br>
     <input type="checkbox" th:field="*{isUrgent}">Urgent<br>
+    <select th:field="*{assignee}">
+        <option th:each="assignee : ${assignees}" th:text="${assignee.firstName}" th:value="${assignee.id}">Volvo</option>
+    </select>
     <button>Submit</button>
 </form>
 </body>

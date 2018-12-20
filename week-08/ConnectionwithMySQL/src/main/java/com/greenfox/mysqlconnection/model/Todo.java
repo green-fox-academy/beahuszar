@@ -1,11 +1,10 @@
 package com.greenfox.mysqlconnection.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
+@Table(name = "todos")
 public class Todo {
 
   @Id
@@ -14,6 +13,10 @@ public class Todo {
   private String title;
   private boolean isUrgent;
   private boolean isDone;
+
+  @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+  @JoinColumn(name = "assignee_id")
+  private Assignee assignee;
 
   public Todo() {
   }
@@ -60,5 +63,13 @@ public class Todo {
 
   public void setIsDone(boolean done) {
     isDone = done;
+  }
+
+  public Assignee getAssignee() {
+    return assignee;
+  }
+
+  public void setAssignee(Assignee assignee) {
+    this.assignee = assignee;
   }
 }

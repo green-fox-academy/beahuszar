@@ -16,6 +16,9 @@
     <tr>
         <th>ID</th>
         <th>Description</th>
+        <th>Assignee First Name</th>
+        <th>Assignee Last Name</th>
+        <th>Assignee e-mail address</th>
         <th>Urgent</th>
         <th>Done</th>
         <th>Delete item</th>
@@ -24,6 +27,9 @@
     <tr th:each="todo : ${todos}" >
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
+        <td th:text="${todo.assignee} ? ${todo.getAssignee().getFirstName()} : ''"></td>
+        <td th:text="${todo.assignee} ? ${todo.getAssignee().getLastName()} : ''"></td>
+        <td th:text="${todo.assignee} ? ${todo.getAssignee().getEmail()} : ''"></td>
         <td th:text="${todo.getIsUrgent()}"></td>
         <td th:text="${todo.getIsDone()}"></td>
         <td>

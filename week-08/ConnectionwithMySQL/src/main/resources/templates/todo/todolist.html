@@ -14,6 +14,8 @@
 </form>
 <table border="1">
     <tr>
+        <th>Created At</th>
+        <th>Due Date</th>
         <th>ID</th>
         <th>Description</th>
         <th>Assignee First Name</th>
@@ -25,6 +27,8 @@
         <th>Edit item</th>
     </tr>
     <tr th:each="todo : ${todos}" >
+        <td th:text="${#dates.format(todo.getCreatedAt(), 'dd-MM-YYY')}"></td>
+        <td th:text="${#dates.format(todo.getDueDate(), 'dd-MM-YYY')}"></td>
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
         <td>

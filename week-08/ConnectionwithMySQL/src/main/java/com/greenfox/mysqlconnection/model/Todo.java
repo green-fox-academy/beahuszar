@@ -1,5 +1,7 @@
 package com.greenfox.mysqlconnection.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -14,17 +16,18 @@ public class Todo {
   private boolean isUrgent;
   private boolean isDone;
 
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date dueDate;
+
+  @Temporal(TemporalType.TIMESTAMP)
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date createdAt = new Date();
+
   @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
   @JoinColumn(name = "assignee_id")
   private Assignee assignee;
 
   public Todo() {
-  }
-
-  public Todo(String title) {
-    this.title = title;
-    this.isUrgent = false;
-    this.isDone = false;
   }
 
   public Todo(String title, boolean isUrgent, boolean isDone) {
@@ -71,5 +74,21 @@ public class Todo {
 
   public void setAssignee(Assignee assignee) {
     this.assignee = assignee;
+  }
+
+  public Date getDueDate() {
+    return dueDate;
+  }
+
+  public void setDueDate(Date dueDate) {
+    this.dueDate = dueDate;
+  }
+
+  public Date getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(Date createdAt) {
+    this.createdAt = createdAt;
   }
 }

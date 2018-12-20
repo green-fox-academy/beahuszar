@@ -25,13 +25,13 @@ public class TodoController {
     } else {
       model.addAttribute("todos",service.getTodoList());
     }
-    return "todolist";
+    return "todo/todolist";
   }
 
   @GetMapping("/new")
   public String addform (Model model) {
     model.addAttribute("todo", new Todo());
-    return "add";
+    return "todo/add";
   }
 
   @PostMapping("/new")
@@ -49,7 +49,7 @@ public class TodoController {
   @GetMapping("/{id}/edit")
   public String editForm(@PathVariable long id, Model model) {
     model.addAttribute("todo", service.getToDoById(id));
-    return "edit";
+    return "todo/edit";
   }
 
   @PostMapping("/{id}/edit")
@@ -61,6 +61,6 @@ public class TodoController {
   @PostMapping("/search")
   public String searchToDo(String text, Model model) {
     model.addAttribute("todos", service.findToDoByKeyWord(text));
-    return "todolist";
+    return "todo/todolist";
   }
 }

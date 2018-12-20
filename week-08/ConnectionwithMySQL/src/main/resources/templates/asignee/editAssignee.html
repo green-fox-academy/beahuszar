@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>editAssignee</title>
+</head>
+<body>
+<form action="/todo/assignee/edit/{id}(id=${assignee.getID()})}" th:object="${assignee}" method="POST">
+    <input type="text" th:field="*{assignee.getFirstName()}">
+    <input type="text" th:field="*{assignee.getLastName()}">
+    <input type="text" th:field="*{assignee.getEmail()">
+</form>
+</body>
+</html>

@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Asignee {
+public class Assignee {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,10 +15,10 @@ public class Asignee {
   private String lastName;
   private String email;
 
-  public Asignee() {
+  public Assignee() {
   }
 
-  public Asignee(String firstName, String lastName, String email) {
+  public Assignee(String firstName, String lastName, String email) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;

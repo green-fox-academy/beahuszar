@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>assignee</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email address</th>
+        <th>Edit Assignee</th>
+        <th>Delete Assignee</th>
+    </tr>
+    <tr th:each="assignee : ${assigneeList}">
+        <td th:text="${assignee.getFirstName()}"></td>
+        <td th:text="${assignee.getLastName()}"></td>
+        <td th:text="${assignee.getEmail()}"></td>
+        <td>
+            <a th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
+        </td>
+        <td>
+            <a></a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

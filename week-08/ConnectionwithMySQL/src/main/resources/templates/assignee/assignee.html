@@ -5,6 +5,7 @@
     <title>assignee</title>
 </head>
 <body>
+<a href="/todo/assignee/addassignee">Add new assignee</a>
 <table border="1">
     <tr>
         <th>First Name</th>
@@ -21,7 +22,7 @@
             <a th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
         </td>
         <td>
-            <a></a>
+            <a th:href="@{delete/{id}(id=${assignee.getId()})}">Delete</a>
         </td>
     </tr>
 </table>

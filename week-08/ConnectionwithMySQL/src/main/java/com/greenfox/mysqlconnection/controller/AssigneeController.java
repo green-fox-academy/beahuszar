@@ -36,5 +36,21 @@ public class AssigneeController {
     return "redirect:/todo/assignee/";
   }
 
-  
+  @GetMapping("/delete/{id}")
+  public String deleteAssignee(@PathVariable long id) {
+    assigneeService.deleteAssignee(id);
+    return "redirect:/todo/assignee/";
+  }
+
+  @GetMapping("/addassignee")
+  public String addAssignee(Model model) {
+    model.addAttribute("assignee", new Assignee());
+    return "assignee/addAssignee";
+  }
+
+  @PostMapping("/addassignee")
+  public String addAssignee(@ModelAttribute Assignee assignee) {
+    assigneeService.saveAssignees(assignee);
+    return "redirect:/todo/assignee/";
+  }
 }

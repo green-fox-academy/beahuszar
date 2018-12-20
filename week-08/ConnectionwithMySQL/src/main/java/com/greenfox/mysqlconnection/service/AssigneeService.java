@@ -33,4 +33,8 @@ public class AssigneeService {
   public Assignee getAssignee(long id) {
     return assigneeRepository.findById(id).orElse(null);
   }
+
+  public void deleteAssignee(long id) {
+    assigneeRepository.deleteById(id);
+  }
 }

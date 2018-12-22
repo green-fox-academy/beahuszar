@@ -5,37 +5,37 @@
     <title>todobyassignee</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Assignee First Name</th>
-            <th>Assignee Last Name</th>
-            <th>Assignee e-mail address</th>
-            <th>Urgent</th>
-            <th>Done</th>
-            <th>Delete item</th>
-            <th>Edit item</th>
-        </tr>
-        <tr th:each="todo : ${todos}" >
-            <td th:text="${todo.getId()}"></td>
-            <td th:text="${todo.getTitle()}"></td>
-            <td>
-                <a th:text="${todo.assignee} ? ${todo.getAssignee().getFirstName()}"
-                   th:href="${todo.assignee} ? @{/todo/assignee/assigneetodo/{id}(id=${todo.assignee.getId()})}">
-                </a>
-            </td>
-            <td th:text="${todo.assignee} ? ${todo.getAssignee().getLastName()} : ''"></td>
-            <td th:text="${todo.assignee} ? ${todo.getAssignee().getEmail()} : ''"></td>
-            <td th:text="${todo.getIsUrgent()}"></td>
-            <td th:text="${todo.getIsDone()}"></td>
-            <td>
-                <a th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
-            </td>
-            <td>
-                <a th:href="@{'/todo/' + ${todo.id} + '/edit'}">edit</a>
-            </td>
-        </tr>
-    </table>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Assignee First Name</th>
+        <th>Assignee Last Name</th>
+        <th>Assignee e-mail address</th>
+        <th>Urgent</th>
+        <th>Done</th>
+        <th>Delete item</th>
+        <th>Edit item</th>
+    </tr>
+    <tr th:each="todo : ${todos}" >
+        <td th:text="${todo.getId()}"></td>
+        <td th:text="${todo.getTitle()}"></td>
+        <td>
+            <a th:text="${todo.assignee} ? ${todo.getAssignee().getFirstName()}"
+               th:href="${todo.assignee} ? @{/todo/assignee/assigneetodo/{id}(id=${todo.assignee.getId()})}">
+            </a>
+        </td>
+        <td th:text="${todo.assignee} ? ${todo.getAssignee().getLastName()} : ''"></td>
+        <td th:text="${todo.assignee} ? ${todo.getAssignee().getEmail()} : ''"></td>
+        <td th:text="${todo.getIsUrgent()}"></td>
+        <td th:text="${todo.getIsDone()}"></td>
+        <td>
+            <a th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
+        </td>
+        <td>
+            <a th:href="@{'/todo/' + ${todo.id} + '/edit'}">edit</a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>

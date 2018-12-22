@@ -50,10 +50,10 @@
                 <td th:text="${todo.getIsUrgent()}"></td>
                 <td th:text="${todo.getIsDone()}"></td>
                 <td>
-                    <a th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
+                    <a class="btn btn-danger" th:href="@{'/todo/' + ${todo.id} + '/delete'}">delete</a>
                 </td>
                 <td>
-                    <a th:href="@{'/todo/' + ${todo.id} + '/edit'}">edit</a>
+                    <a class="btn btn-warning" th:href="@{'/todo/' + ${todo.id} + '/edit'}">edit</a>
                 </td>
             </tr>
         </table>

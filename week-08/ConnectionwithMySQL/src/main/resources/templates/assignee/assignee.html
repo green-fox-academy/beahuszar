@@ -3,31 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>assignee</title>
+    <link href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<a href="/todo/assignee/addassignee">Add new assignee</a>
-<table border="1">
-    <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email address</th>
-        <th>Edit Assignee</th>
-        <th>Delete Assignee</th>
-    </tr>
-    <tr th:each="assignee : ${assigneeList}">
-        <td>
-            <a th:text="${assignee.getFirstName()}"
-               th:href="@{/todo/assignee/assigneetodo/{id}(id=${assignee.getId()})}"></a>
-        </td>
-        <td th:text="${assignee.getLastName()}"></td>
-        <td th:text="${assignee.getEmail()}"></td>
-        <td>
-            <a th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
-        </td>
-        <td>
-            <a th:href="@{delete/{id}(id=${assignee.getId()})}">Delete</a>
-        </td>
-    </tr>
-</table>
+<header>
+    <nav class="navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/todo/"><i class="fa fa-check-square"></i> Todo</a>
+            <a class="nav-link btn btn-secondary" href="/todo/new"><i class="fa fa-users"></i>Add new Todo</a>
+            <a class="nav-link btn btn-secondary" href="/todo/assignee/"><i class="fa fa-users"></i>List of Assignees</a>
+            <form class="form-inline" action="/todo/search" method="post">
+                <input class="form-control mr-sm-2" type="search" name="text" placeholder="Search Todos" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <a class="btn btn-success mr-auto" href="/todo/assignee/addassignee">Add new assignee</a>
+    <div class="table table-striped">
+        <table class="table table-hover">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email address</th>
+                <th>Edit Assignee</th>
+                <th>Delete Assignee</th>
+            </tr>
+            <tr th:each="assignee : ${assigneeList}">
+                <td>
+                    <a th:text="${assignee.getFirstName()}"
+                       th:href="@{/todo/assignee/assigneetodo/{id}(id=${assignee.getId()})}"></a>
+                </td>
+                <td th:text="${assignee.getLastName()}"></td>
+                <td th:text="${assignee.getEmail()}"></td>
+                <td>
+                    <a th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
+                </td>
+                <td>
+                    <a th:href="@{delete/{id}(id=${assignee.getId()})}">Delete</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

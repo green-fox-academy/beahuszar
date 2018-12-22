@@ -39,10 +39,10 @@
                 <td th:text="${assignee.getLastName()}"></td>
                 <td th:text="${assignee.getEmail()}"></td>
                 <td>
-                    <a th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
+                    <a class="btn btn-warning" th:href="@{edit/{id}(id=${assignee.getId()})}">Edit</a>
                 </td>
                 <td>
-                    <a th:href="@{delete/{id}(id=${assignee.getId()})}">Delete</a>
+                    <a class="btn btn-danger" th:href="@{delete/{id}(id=${assignee.getId()})}">Delete</a>
                 </td>
             </tr>
         </table>

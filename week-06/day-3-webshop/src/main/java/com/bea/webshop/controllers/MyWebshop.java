@@ -89,7 +89,9 @@ public class MyWebshop {
   public String getKeyWord(String keyWord, Model model) {
     List<Item> searchedItems = items
         .stream()
-        .filter(items -> items.getName().toLowerCase().contains(keyWord) || items.getDescription().toLowerCase().contains(keyWord))
+        .filter(items
+            -> items.getName().toLowerCase().contains(keyWord)
+            || items.getDescription().toLowerCase().contains(keyWord))
         .collect(Collectors.toList());
     model.addAttribute("items", searchedItems);
     return "webshop";

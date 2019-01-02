@@ -24,4 +24,8 @@ public class RedditService {
     repository.findAll().forEach(itemList::add);
     return itemList;
   }
+
+  public void saveItem(RedditItem item) {
+    repository.save(item);
+  }
 }

@@ -8,9 +8,9 @@
 <h1>Submit a new post</h1>
 <form action="/submit" th:object="${item}" method="POST">
     <label>Title:</label>
-    <input type="text" th:field="*{title}">
+    <input type="text" th:field="*{title}" style="display: block">
     <label>URL:</label>
-    <input type="text" th:field="*{url}">
+    <input type="text" th:field="*{url}" style="display: block">
     <button>Submit</button>
 </form>
 </body>

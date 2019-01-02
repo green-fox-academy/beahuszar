@@ -37,13 +37,13 @@ public class RedditController {
     return "redirect:/";
   }
 
-  @GetMapping("/upvote/{id}")
+  @PostMapping("/upvote/{id}")
   public String upVote(@PathVariable long id) {
     service.upVote(id);
     return "redirect:/";
   }
 
-  @GetMapping("/downvote/{id}")
+  @PostMapping("/downvote/{id}")
   public String downVote(@PathVariable long id) {
     service.downVote(id);
     return "redirect:/";

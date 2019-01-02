@@ -12,10 +12,14 @@
         <td th:text="${#dates.format(item.date, 'YYYY-MM-DD')}"></td>
         <td th:text="${item.voteCounter}"></td>
         <td>
-            <a th:href="@{/upvote/{id}(id=${item.id})}">+</a>
+            <form th:action="@{/upvote/{id}(id=${item.id})}" method="post">
+                <input type="submit" value="+">
+            </form>
         </td>
         <td>
-            <a th:href="@{/downvote/{id}(id=${item.id})}">-</a>
+            <form th:action="@{/downvote/{id}(id=${item.id})}" method="post">
+                <input type="submit" value="-">
+            </form>
         </td>
         <td>
             <a th:href="@{${item.url}}" th:text="${item.title}"></a>

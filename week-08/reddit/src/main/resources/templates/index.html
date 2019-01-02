@@ -11,10 +11,10 @@
     <tr th:each="item : ${list}">
         <td th:text="${item.voteCounter}"></td>
         <td>
-            <a href="/upvote">+</a>
+            <a th:href="@{/upvote/{id}(id=${item.id})}">+</a>
         </td>
         <td>
-            <a href="/downvote">-</a>
+            <a th:href="@{/downvote/{id}(id=${item.id})}">-</a>
         </td>
         <td>
             <a th:href="@{${item.url}}" th:text="${item.title}"></a>

@@ -28,4 +28,18 @@ public class RedditService {
   public void saveItem(RedditItem item) {
     repository.save(item);
   }
+
+  public RedditItem getItemByID(long id) {
+    return repository.findById(id).get();
+  }
+
+  public void upVote(long id) {
+    getItemByID(id).setVoteCounter(getItemByID(id).getVoteCounter() + 1);
+    saveItem(getItemByID(id));
+  }
+
+  public void downVote(long id) {
+    getItemByID(id).setVoteCounter(getItemByID(id).getVoteCounter() - 1);
+    saveItem(getItemByID(id));
+  }
 }

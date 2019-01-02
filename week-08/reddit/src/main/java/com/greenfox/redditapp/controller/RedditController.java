@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -33,6 +34,18 @@ public class RedditController {
   @PostMapping("/submit")
   public String saveItem (RedditItem item){
     service.saveItem(item);
+    return "redirect:/";
+  }
+
+  @GetMapping("/upvote/{id}")
+  public String upVote(@PathVariable long id) {
+    service.upVote(id);
+    return "redirect:/";
+  }
+
+  @GetMapping("/downvote/{id}")
+  public String downVote(@PathVariable long id) {
+    service.downVote(id);
     return "redirect:/";
   }
 }

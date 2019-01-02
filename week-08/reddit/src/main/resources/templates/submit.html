@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Submit a new post</h1>
-<form action="/submit" th:object="reddititem" method="POST">
+<form action="/submit" th:object="${reddititem}" method="POST">
     <label>Title:</label>
     <input type="text" th:field="*{title}">
     <label>URL:</label>

@@ -3,12 +3,12 @@ package com.greenfox.redditapp.repository;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "reddititems")
+@Table(name = "items")
 public class RedditItem {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  float id;
+  long id;
   int voteCounter;
   String url;
   String title;
@@ -22,11 +22,11 @@ public class RedditItem {
     this.voteCounter = 1;
   }
 
-  public float getId() {
+  public long getId() {
     return id;
   }
 
-  public void setId(float id) {
+  public void setId(long id) {
     this.id = id;
   }
 

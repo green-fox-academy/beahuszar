@@ -26,7 +26,7 @@ public class RedditController {
 
   @GetMapping("/submit")
   public String submitItem(Model model) {
-    model.addAttribute("reddititem", new RedditItem());
+    model.addAttribute("item", new RedditItem());
     return "submit";
   }
 

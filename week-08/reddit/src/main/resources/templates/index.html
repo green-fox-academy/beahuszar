@@ -9,7 +9,7 @@
 <h1>Trending posts</h1>
 <table>
     <tr th:each="item : ${list}">
-        <td th:text="*{voteCounter}"></td>
+        <td th:text="${item.voteCounter}"></td>
         <td>
             <a href="/upvote">+</a>
         </td>
@@ -17,7 +17,7 @@
             <a href="/downvote">-</a>
         </td>
         <td>
-            <a href="*{url}" th:text="*{title}"></a>
+            <a th:href="@{${item.url}}" th:text="${item.title}"></a>
         </td>
     </tr>
 </table>

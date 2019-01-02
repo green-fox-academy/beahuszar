@@ -8,12 +8,13 @@ public class RedditItem {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  long id;
-  int voteCounter;
-  String url;
-  String title;
+  private long id;
+  private int voteCounter;
+  private String url;
+  private String title;
 
   public RedditItem() {
+    this.voteCounter = 1;
   }
 
   public RedditItem(String url, String title) {

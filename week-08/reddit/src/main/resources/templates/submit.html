@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>submit</title>
+    <link href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="text-center">
 <h1>Submit a new post</h1>
 <form action="/submit" th:object="${item}" method="POST">
-    <label>Title:</label>
-    <input type="text" th:field="*{title}" style="display: block">
-    <label>URL:</label>
-    <input type="text" th:field="*{url}" style="display: block">
-    <button>Submit</button>
+    <div class="form-group">
+        <label>Title:</label>
+        <input type="text" th:field="*{title}">
+    </div>
+    <div class="form-group">
+        <label>URL:</label>
+        <input type="text" th:field="*{url}">
+    </div>
+    <button class="btn btn-info btn-lg active">Submit</button>
 </form>
+<script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

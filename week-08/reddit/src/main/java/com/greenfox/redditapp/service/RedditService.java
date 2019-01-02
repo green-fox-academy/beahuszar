@@ -1,8 +1,12 @@
 package com.greenfox.redditapp.service;
 
+import com.greenfox.redditapp.repository.RedditItem;
 import com.greenfox.redditapp.repository.RedditRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class RedditService {
@@ -15,4 +19,9 @@ public class RedditService {
   }
 
 
+  public List<RedditItem> getAllItems() {
+    List<RedditItem> itemList = new ArrayList<>();
+    repository.findAll().forEach(itemList::add);
+    return itemList;
+  }
 }

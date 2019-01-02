@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
 </head>
 <body>
-
+<a href="/submit">Submit new post</a>
+<h1>Trending posts</h1>
+<table>
+    <tr th:each="item : ${list}">
+        <td th:text="*{voteCounter}"></td>
+        <td>
+            <a href="/upvote">+</a>
+        </td>
+        <td>
+            <a href="/downvote">-</a>
+        </td>
+        <td>
+            <a href="*{url}" th:text="*{title}"></a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>

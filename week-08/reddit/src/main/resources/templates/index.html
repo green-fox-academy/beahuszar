@@ -9,6 +9,7 @@
 <h1>Trending posts</h1>
 <table>
     <tr th:each="item : ${list}">
+        <td th:text="${#dates.format(item.date, 'YYYY-MM-DD')}"></td>
         <td th:text="${item.voteCounter}"></td>
         <td>
             <a th:href="@{/upvote/{id}(id=${item.id})}">+</a>

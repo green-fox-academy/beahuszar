@@ -1,31 +1,36 @@
 package com.greenfoxacademy.tamagotchi.service;
 
+import com.greenfoxacademy.tamagotchi.repository.Pet;
 import com.greenfoxacademy.tamagotchi.repository.PetRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LoginService {
+public class TamagotchiService {
 
-  private PetRepo petRepo;
+  private PetRepo repository;
 
   @Autowired
-  public LoginService(PetRepo petRepo) {
-    this.petRepo = petRepo;
+  public TamagotchiService(PetRepo repository) {
+    this.repository = repository;
   }
 
   public String checkName(String name) {
     if (name == null) {
       return "redirect:/login";
-    } else if (petRepo.isDuplicate(name)) {
+    } else if (isDuplicateName(name)) {
       return "redirect:/login";
     } else {
-      petRepo.addPet(name);
+      savePet(name);
       return "redirect:/";
     }
   }
 
-  public PetRepo getPetRepo() {
-    return petRepo;
+  public void savePet(String name) {
+    repository.save(new Pet(name));
+  }
+
+  public boolean isDuplicateName(String name) {
+    return repository.existsByName(name);
   }
 }

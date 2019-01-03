@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>login</title>
 </head>
 <body>
 <h1>Welcome to Programmer Őszapó Club!</h1>
-<img src="oszapo.jpg" alt="oszapo">
+<img src="oszapo.jpg" alt="oszapo" style="width: 100px; height: auto">
 <h2>Plez provide a name, so you can associate it to your pet!</h2>
+
+<p th:text="${error}" style="color: red"></p>
 <form action="/login" method="post">
     Give a nickname <input type="text" name="nickname" placeholder="E.g.: Gandulf">
     <button type="submit">Get my Őszapó!</button>

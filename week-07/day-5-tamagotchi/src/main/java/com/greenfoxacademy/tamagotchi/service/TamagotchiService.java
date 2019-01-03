@@ -19,7 +19,7 @@ public class TamagotchiService {
     if (name == null) {
       return "redirect:/login";
     } else if (isDuplicateName(name)) {
-      return "redirect:/login";
+      return "login";
     } else {
       savePet(name);
       return "redirect:/";
@@ -32,5 +32,9 @@ public class TamagotchiService {
 
   public boolean isDuplicateName(String name) {
     return repository.existsByName(name);
+  }
+
+  public String errorMessage() {
+    return "This name is already used, choose another one!";
   }
 }

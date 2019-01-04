@@ -21,7 +21,7 @@ public class TamagotchiService {
     } else if (!isNameAlreadyCreated(name)) {
       return "login";
     } else {
-      return "redirect:/mypet";
+      return "redirect:/?name=" + name;
     }
   }
 
@@ -32,7 +32,7 @@ public class TamagotchiService {
       return "login";
     } else {
       repository.save(new Pet(name));
-      return "redirect:/mypet";
+      return "redirect:/?name=" + name;
     }
   }
 

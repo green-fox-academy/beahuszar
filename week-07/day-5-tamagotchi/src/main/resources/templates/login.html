@@ -10,9 +10,16 @@
 <h2>Plez provide a name, so you can associate it to your pet!</h2>
 
 <p th:text="${error}" style="color: red"></p>
-<form action="/login" method="post">
-    Give a nickname <input type="text" name="nickname" placeholder="E.g.: Gandulf">
+
+<form action="/login" method="POST">
+    Enter nickname to login <input type="text" name="nickname" placeholder="E.g.: Gandulf">
     <button type="submit">Get my Őszapó!</button>
 </form>
+
+<form action="/reg" method="POST">
+    Add new Őszapó <input type="text" name="newName" placeholder="E.g.: Gandulf">
+    <button type="submit">Save my Őszapó</button>
+</form>
+
 </body>
 </html>

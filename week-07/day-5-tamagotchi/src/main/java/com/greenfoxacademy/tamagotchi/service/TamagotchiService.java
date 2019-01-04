@@ -21,12 +21,19 @@ public class TamagotchiService {
     } else if (!isNameAlreadyCreated(name)) {
       return "login";
     } else {
-      return "index";
+      return "redirect:/mypet";
     }
   }
 
-  public void savePet(String name) {
-    repository.save(new Pet(name));
+  public String savePet(String name) {
+    if (name == null) {
+      return "redirect:/login";
+    } else if (isNameAlreadyCreated(name)) {
+      return "login";
+    } else {
+      repository.save(new Pet(name));
+      return "redirect:/mypet";
+    }
   }
 
   public boolean isNameAlreadyCreated(String name) {

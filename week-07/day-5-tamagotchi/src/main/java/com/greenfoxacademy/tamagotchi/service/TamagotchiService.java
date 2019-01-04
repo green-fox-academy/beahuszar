@@ -18,11 +18,10 @@ public class TamagotchiService {
   public String checkName(String name) {
     if (name == null) {
       return "redirect:/login";
-    } else if (isDuplicateName(name)) {
+    } else if (!isNameAlreadyCreated(name)) {
       return "login";
     } else {
-      savePet(name);
-      return "redirect:/";
+      return "index";
     }
   }
 
@@ -30,11 +29,11 @@ public class TamagotchiService {
     repository.save(new Pet(name));
   }
 
-  public boolean isDuplicateName(String name) {
+  public boolean isNameAlreadyCreated(String name) {
     return repository.existsByName(name);
   }
 
   public String errorMessage() {
-    return "This name is already used, choose another one!";
+    return "You have provided a name that has not been used before, add it as a new one!";
   }
 }

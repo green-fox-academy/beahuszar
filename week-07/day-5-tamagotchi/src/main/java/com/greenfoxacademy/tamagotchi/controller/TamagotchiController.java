@@ -17,7 +17,7 @@ public class TamagotchiController {
     this.service = service;
   }
 
-  @GetMapping("/")
+  @GetMapping("/mypet")
   public String index() {
     return "index";
   }
@@ -32,4 +32,6 @@ public class TamagotchiController {
     model.addAttribute("error", service.errorMessage());
     return service.checkName(nickname);
   }
+
+  
 }

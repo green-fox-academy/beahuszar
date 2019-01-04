@@ -43,4 +43,8 @@ public class TamagotchiService {
   public String errorMessage() {
     return "You have provided a name that has not been used before, add it as a new one!";
   }
+
+  public Pet findByName(String name) {
+    return repository.findByName(name);
+  }
 }

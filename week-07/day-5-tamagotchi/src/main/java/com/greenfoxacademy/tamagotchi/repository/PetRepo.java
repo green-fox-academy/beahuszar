@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PetRepo extends CrudRepository<Pet, Long > {
   boolean existsByName(String name);
+  Pet findByName (String name);
 }

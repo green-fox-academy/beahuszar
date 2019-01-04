@@ -21,7 +21,8 @@ public class TamagotchiController {
   }
 
   @GetMapping("/")
-  public String index(@RequestParam(value = "name", required = false) String name) {
+  public String index(@RequestParam(value = "name", required = false) String name, Model model) {
+    model.addAttribute("currentpet",service.findByName(name));
     return "index";
   }
 

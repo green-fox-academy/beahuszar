@@ -6,7 +6,7 @@
 </head>
     <body>
     <img src="oszapo.jpg" alt="oszapo">
-    <p th:text="'This is ' + ${pet.name} + ' currently living on charm and cuteness. He knows 2 tricks.'"></p>
+    <p th:text="'This is ' + ${pet.name} + ' currently living on ' + ${pet.drink.drink} + ' and ' + ${pet.food.food} + '. He knows 2 tricks.'"></p>
     <h1>Known tricks</h1>
     <ul>
         <li>write html</li>

@@ -15,6 +15,13 @@ public class Food {
   @OneToMany(mappedBy = "food")
   private List<Pet> petList;
 
+  public Food() {
+  }
+
+  public Food(String food) {
+    this.food = food;
+  }
+
   public long getId() {
     return id;
   }

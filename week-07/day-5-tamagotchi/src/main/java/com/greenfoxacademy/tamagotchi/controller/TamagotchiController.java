@@ -1,14 +1,13 @@
 package com.greenfoxacademy.tamagotchi.controller;
 
+import com.greenfoxacademy.tamagotchi.repository.Drink;
+import com.greenfoxacademy.tamagotchi.repository.Food;
 import com.greenfoxacademy.tamagotchi.repository.Pet;
 import com.greenfoxacademy.tamagotchi.service.TamagotchiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class TamagotchiController {
@@ -21,7 +20,7 @@ public class TamagotchiController {
   }
 
   @GetMapping("/")
-  public String index(@RequestParam(value = "name") String name, Model model) {
+  public String index(@RequestParam(value = "name", required = false) String name, Model model) {
     model.addAttribute("pet", service.findByName(name));
     return "index";
   }
@@ -47,6 +46,8 @@ public class TamagotchiController {
     model.addAttribute("petToFeed", service.findByName(name));
     model.addAttribute("foodList", service.getFoodList());
     model.addAttribute("drinkList", service.getDrinkList());
+    model.addAttribute("newfood", new Food());
+    model.addAttribute("newdrink", new Drink());
     return "menu";
   }
 
@@ -56,4 +57,17 @@ public class TamagotchiController {
     return "redirect:/?name=" + pet.getName();
   }
 
+  @PostMapping("/newfood/{petname}")
+  public String addNewFood(@ModelAttribute Food food,
+                           @PathVariable String petname) {
+    service.addFood(food);
+    return "redirect:/nutrition?name=" + petname;
+  }
+
+  @PostMapping("/newdrink/{petname}")
+  public String addNewFood(@ModelAttribute Drink drink,
+                           @PathVariable String petname) {
+    service.addDrink(drink);
+    return "redirect:/nutrition?name=" + petname;
+  }
 }

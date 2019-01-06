@@ -24,6 +24,8 @@ public class Pet {
 
   public Pet(String name) {
     this.name = name;
+    this.food = new Food("bread");
+    this.drink = new Drink("wine");
   }
 
   public String getName() {

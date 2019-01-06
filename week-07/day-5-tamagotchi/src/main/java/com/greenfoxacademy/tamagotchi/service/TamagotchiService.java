@@ -69,4 +69,12 @@ public class TamagotchiService {
     drinkRepo.findAll().forEach(drinkList::add);
     return drinkList;
   }
+
+  public void addFood(Food food) {
+    foodRepo.save(food);
+  }
+
+  public void addDrink(Drink drink) {
+    drinkRepo.save(drink);
+  }
 }

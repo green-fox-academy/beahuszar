@@ -1,5 +1,7 @@
 package com.greenfoxacademy.tamagotchi.service;
 
+import com.greenfoxacademy.tamagotchi.repository.DrinkRepo;
+import com.greenfoxacademy.tamagotchi.repository.FoodRepo;
 import com.greenfoxacademy.tamagotchi.repository.Pet;
 import com.greenfoxacademy.tamagotchi.repository.PetRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +11,14 @@ import org.springframework.stereotype.Service;
 public class TamagotchiService {
 
   private PetRepo repository;
+  private FoodRepo foodRepo;
+  private DrinkRepo drinkRepo;
 
   @Autowired
-  public TamagotchiService(PetRepo repository) {
+  public TamagotchiService(PetRepo repository, FoodRepo foodRepo, DrinkRepo drinkRepo) {
     this.repository = repository;
+    this.foodRepo = foodRepo;
+    this.drinkRepo = drinkRepo;
   }
 
   public String checkName(String name) {

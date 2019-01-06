@@ -1,11 +1,11 @@
 package com.greenfoxacademy.tamagotchi.service;
 
-import com.greenfoxacademy.tamagotchi.repository.DrinkRepo;
-import com.greenfoxacademy.tamagotchi.repository.FoodRepo;
-import com.greenfoxacademy.tamagotchi.repository.Pet;
-import com.greenfoxacademy.tamagotchi.repository.PetRepo;
+import com.greenfoxacademy.tamagotchi.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class TamagotchiService {
@@ -31,7 +31,7 @@ public class TamagotchiService {
     }
   }
 
-  public String savePet(String name) {
+  public String savePetByName(String name) {
     if (name == null) {
       return "redirect:/login";
     } else if (isNameAlreadyCreated(name)) {
@@ -52,5 +52,21 @@ public class TamagotchiService {
 
   public Pet findByName(String name) {
     return repository.findByName(name);
+  }
+
+  public void savePet(Pet pet) {
+    repository.save(pet);
+  }
+
+  public List<Food> getFoodList() {
+    List<Food> foodList = new ArrayList<>();
+    foodRepo.findAll().forEach(foodList::add);
+    return foodList;
+  }
+
+  public List<Drink> getDrinkList() {
+    List<Drink> drinkList = new ArrayList<>();
+    drinkRepo.findAll().forEach(drinkList::add);
+    return drinkList;
   }
 }

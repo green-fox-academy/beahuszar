@@ -1,8 +1,6 @@
 package com.greenfoxacademy.tamagotchi.repository;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "pets")

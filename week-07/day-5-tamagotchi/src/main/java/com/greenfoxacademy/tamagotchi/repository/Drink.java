@@ -1,6 +1,7 @@
 package com.greenfoxacademy.tamagotchi.repository;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "drinks")
@@ -10,6 +11,9 @@ public class Drink {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String drink;
+
+  @OneToMany(mappedBy = "drink")
+  private List<Pet> petList;
 
   public Drink() {
   }
@@ -32,5 +36,13 @@ public class Drink {
 
   public void setDrink(String drink) {
     this.drink = drink;
+  }
+
+  public List<Pet> getPetList() {
+    return petList;
+  }
+
+  public void setPetList(List<Pet> petList) {
+    this.petList = petList;
   }
 }

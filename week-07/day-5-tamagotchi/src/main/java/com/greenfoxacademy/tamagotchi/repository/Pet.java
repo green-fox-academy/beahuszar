@@ -10,8 +10,14 @@ public class Pet {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String name;
-  private String food;
-  private String drink;
+
+  @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+  @JoinColumn(name = "food_id")
+  private Food food;
+
+  @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+  @JoinColumn(name = "drink_id")
+  private Drink drink;
 
   public Pet() {
   }
@@ -31,23 +37,24 @@ public class Pet {
   public long getId() {
     return id;
   }
+
   public void setId(long id) {
     this.id = id;
   }
 
-  public String getFood() {
+  public Food getFood() {
     return food;
   }
 
-  public void setFood(String food) {
+  public void setFood(Food food) {
     this.food = food;
   }
 
-  public String getDrink() {
+  public Drink getDrink() {
     return drink;
   }
 
-  public void setDrink(String drink) {
+  public void setDrink(Drink drink) {
     this.drink = drink;
   }
 }

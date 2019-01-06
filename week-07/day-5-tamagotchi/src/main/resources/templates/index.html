@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<main>
     <body>
     <img src="oszapo.jpg" alt="oszapo">
-    <p th:text="'This is ' + ${petName} + ' currently living on charm and cuteness. He knows 2 tricks.'"></p>
+    <p th:text="'This is ' + ${pet.name} + ' currently living on charm and cuteness. He knows 2 tricks.'"></p>
     <h1>Known tricks</h1>
     <ul>
         <li>write html</li>
         <li>code in Java</li>
     </ul>
+    <form th:action="@{/nutrition}" th:object="${pet}" method="GET">
+        <input type="hidden" th:field="${pet.name}">
+        <button>feed me!</button>
+    </form>
     </body>
-</main>
 </html>

@@ -1,9 +1,9 @@
 package com.greenfoxacademy.tamagotchi.repository;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import javax.persistence.Entity;
 
-@Entity
+@Repository
 public interface DrinkRepo extends CrudRepository<Drink, Long> {
 }

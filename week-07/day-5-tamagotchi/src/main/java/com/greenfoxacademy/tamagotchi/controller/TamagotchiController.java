@@ -22,7 +22,7 @@ public class TamagotchiController {
 
   @GetMapping("/")
   public String index(@RequestParam(value = "name") String name, Model model) {
-    model.addAttribute("petName",name);
+    model.addAttribute("pet", service.findByName(name));
     return "index";
   }
 
@@ -45,8 +45,8 @@ public class TamagotchiController {
   @GetMapping("/nutrition")
   public String addNutr(@RequestParam(value = "name") String name, Model model) {
     model.addAttribute("petToFeed", service.findByName(name));
-    model.addAttribute("food", service.getFoodList());
-    model.addAttribute("drink", service.getDrinkList());
+    model.addAttribute("foodList", service.getFoodList());
+    model.addAttribute("drinkList", service.getDrinkList());
     return "menu";
   }
 

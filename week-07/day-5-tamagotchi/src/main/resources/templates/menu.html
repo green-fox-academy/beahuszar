@@ -5,8 +5,14 @@
     <title>menu</title>
 </head>
 <body>
-<form action="/nutrition" method="POST">
-    <select th:field="*{}"></select>
+<form th:action="@{/nutrition}" th:object="${petToFeed}" method="GET">
+    <select th:field="*{food}">
+        <option th:each="food : ${foodList}" th:text="${food.food}" th:value="${food.id}"></option>
+    </select>
+    <select th:field="*{drink}">
+        <option th:each="drink : ${drinkList}" th:text="${drink.drink}" th:value="${drink.id}"></option>
+    </select>
+    <button>Feed me!</button>
 </form>
 </body>
 </html>

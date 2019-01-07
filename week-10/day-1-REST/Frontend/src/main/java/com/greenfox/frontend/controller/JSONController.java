@@ -14,6 +14,8 @@ public class JSONController {
   private MyService service;
   private LogService logService;
 
+  //logservice not yet tested
+
   @Autowired
   public JSONController(MyService service) {
     this.service = service;

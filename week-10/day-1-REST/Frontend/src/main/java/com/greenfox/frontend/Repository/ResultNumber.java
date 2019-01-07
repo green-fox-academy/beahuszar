@@ -1,14 +1,14 @@
 package com.greenfox.frontend.Repository;
 
-public class Doubling {
+public class ResultNumber {
 
   private Integer received;
   private Integer result;
 
-  public Doubling() {
+  public ResultNumber() {
   }
 
-  public Doubling(Integer received) {
+  public ResultNumber(Integer received) {
     this.received = received;
     this.result = received * 2;
   }

@@ -1,13 +1,9 @@
 package com.greenfox.frontend.controller;
 
-import com.greenfox.frontend.Repository.Doubling;
-import com.greenfox.frontend.Repository.ErrorMessage;
-import com.greenfox.frontend.Repository.Greeting;
+import com.greenfox.frontend.Repository.JsonObject;
 import com.greenfox.frontend.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
 
 @RestController
 public class JSONController {
@@ -37,8 +33,13 @@ public class JSONController {
 
   @PostMapping("/dountil/{action}")
   public Object doUntil(@PathVariable String action,
-                        @RequestBody HashMap<String, Integer> jsonMap) {
-    return service.doUntil(action, jsonMap);
+                        @RequestBody JsonObject until) {
+    return service.doUntil(action, until.getUntil());
+  }
+
+  @PostMapping("/arrays")
+  public Object arrayHandler(@RequestBody JsonObject jsonObject) {
+    return service.getResultFromJsonObject(jsonObject.getMathOperation(), jsonObject.getNumberArray());
   }
 
 }

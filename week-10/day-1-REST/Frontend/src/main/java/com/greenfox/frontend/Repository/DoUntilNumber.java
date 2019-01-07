@@ -2,17 +2,17 @@ package com.greenfox.frontend.Repository;
 
 public class DoUntilNumber {
 
-  private Integer result;
+  private int result;
 
-  public DoUntilNumber(Integer myNumber) {
+  public DoUntilNumber(int myNumber) {
     this.result = myNumber;
   }
 
-  public Integer getResult() {
+  public int getResult() {
     return result;
   }
 
-  public void setResult(Integer result) {
+  public void setResult(int result) {
     this.result = result;
   }
 }

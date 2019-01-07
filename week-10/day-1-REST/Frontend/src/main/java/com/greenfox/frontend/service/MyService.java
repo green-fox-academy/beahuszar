@@ -1,10 +1,7 @@
 package com.greenfox.frontend.service;
 
 import com.greenfox.frontend.Repository.*;
-import com.greenfox.frontend.controller.JSONController;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
 
 @Service
 public class MyService {
@@ -13,7 +10,7 @@ public class MyService {
     if (input == null) {
       return new ErrorMessage("provide input");
     } else {
-      return new Doubling(input);
+      return new ResultNumber(input);
     }
   }
 
@@ -33,15 +30,15 @@ public class MyService {
     return new WordAppend(inputString);
   }
 
-  public DoUntilNumber doUntil(String action, HashMap<String, Integer> jsonMap) {
+  public DoUntilNumber doUntil(String action, int until) {
     if (action.equals("sum")) {
-      return sumUntil(jsonMap.get("until"));
+      return sumUntil(until);
     } else {
-      return factorUntil(jsonMap.get("until"));
+      return factorUntil(until);
     }
   }
 
-  public DoUntilNumber sumUntil(Integer input) {
+  public DoUntilNumber sumUntil(int input) {
     int myNumber = 0;
     for (int i = 1; i <= input ; i++) {
       myNumber = myNumber + i;
@@ -56,5 +53,46 @@ public class MyService {
       fact = fact * i;
     }
     return new DoUntilNumber(fact);
+  }
+
+  public Object getResultFromJsonObject(String mathOperation, int[] numberArray) {
+    if (mathOperation == null || numberArray.length == 0) {
+      return new ErrorMessage("Please provide math operation or numbers");
+    } else {
+      if (mathOperation.equals("sum")) {
+        return getArraySum(numberArray);
+      } else if (mathOperation.equals("multiply")) {
+        return getArrayMultiple(numberArray);
+      } else {
+        return doubleNumbersInArray(numberArray);
+      }
+    }
+  }
+
+  private ArrayResultNumber doubleNumbersInArray(int[] numberArray) {
+    for (int i = 0; i < numberArray.length; i++) {
+      numberArray[i] = numberArray[i] * 2;
+    }
+    return new ArrayResultNumber(numberArray);
+  }
+
+  private ArrayResultNumber getArrayMultiple(int[] numberArray) {
+    int result = 1;
+
+    for (int i = 0; i < numberArray.length; i++) {
+      result = result * numberArray[i];
+    }
+
+    return new ArrayResultNumber(result);
+  }
+
+  private ArrayResultNumber getArraySum(int[] numberArray) {
+    int result = 0;
+
+    for (int i = 0; i < numberArray.length; i++) {
+      result = result + numberArray[i];
+    }
+
+    return new ArrayResultNumber(result);
   }
 }

@@ -5,9 +5,7 @@ import com.greenfox.frontend.Repository.ErrorMessage;
 import com.greenfox.frontend.Repository.Greeting;
 import com.greenfox.frontend.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class JSONController {
@@ -30,5 +28,9 @@ public class JSONController {
     return service.getGreeting(name, title);
   }
 
+  @GetMapping("/appenda/{appendable}")
+  public Object appendA(@PathVariable String appendable) {
+    return service.addA(appendable);
+  }
 
 }

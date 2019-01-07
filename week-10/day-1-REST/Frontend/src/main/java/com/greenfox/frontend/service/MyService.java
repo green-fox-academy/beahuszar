@@ -3,6 +3,7 @@ package com.greenfox.frontend.service;
 import com.greenfox.frontend.Repository.Doubling;
 import com.greenfox.frontend.Repository.ErrorMessage;
 import com.greenfox.frontend.Repository.Greeting;
+import com.greenfox.frontend.Repository.WordAppend;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -26,5 +27,9 @@ public class MyService {
     } else {
       return new Greeting(name,title);
     }
+  }
+
+  public Object addA(String inputString) {
+    return new WordAppend(inputString);
   }
 }

@@ -1,11 +1,13 @@
 package com.greenfox.frontend.Repository;
 
+import org.springframework.stereotype.Service;
+
 public class ErrorMessage {
 
   private String error;
 
-  public ErrorMessage() {
-    this.error = "Please provide an input!";
+  public ErrorMessage(String error) {
+    this.error = error;
   }
 
   public String getError() {

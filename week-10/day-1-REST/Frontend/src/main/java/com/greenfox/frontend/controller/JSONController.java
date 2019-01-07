@@ -7,6 +7,8 @@ import com.greenfox.frontend.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+
 @RestController
 public class JSONController {
 
@@ -31,6 +33,12 @@ public class JSONController {
   @GetMapping("/appenda/{appendable}")
   public Object appendA(@PathVariable String appendable) {
     return service.addA(appendable);
+  }
+
+  @PostMapping("/dountil/{action}")
+  public Object doUntil(@PathVariable String action,
+                        @RequestBody HashMap<String, Integer> jsonMap) {
+    return service.doUntil(action, jsonMap);
   }
 
 }

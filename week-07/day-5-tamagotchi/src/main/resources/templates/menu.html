@@ -7,7 +7,7 @@
 <body>
 <form th:action="@{/nutrition}" th:object="${petToFeed}" method="POST" >
     <select th:field="*{food}">
-        <option th:each="food : ${foodList}" th:text="${food.food}" th:value="${food.id}"></option>
+        <option th:each="food : ${foodList}" th:text="${food.foodName}" th:value="${food.id}"></option>
     </select>
     <select th:field="*{drink}">
         <option th:each="drink : ${drinkList}" th:text="${drink.drink}" th:value="${drink.id}"></option>
@@ -17,8 +17,8 @@
     <button>Submit</button>
 </form>
 <form th:action="@{/newfood/{petname}(petname=${param.name})}" method="POST" th:object="${newfood}">
-    New food:<input type="text" th:field="*{food}">
-    <button>Add new food to menu</button>
+    New foodName:<input type="text" th:field="*{foodName}">
+    <button>Add new foodName to menu</button>
 </form>
 <form th:action="@{/newdrink/{petname}(petname=${param.name})}" method="POST" th:object="${newdrink}">
     New drink:<input type="text" th:field="*{drink}">

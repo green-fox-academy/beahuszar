@@ -10,7 +10,7 @@ public class Food {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
-  private String food;
+  private String foodName;
 
   @OneToMany(mappedBy = "food")
   private List<Pet> petList;
@@ -19,7 +19,7 @@ public class Food {
   }
 
   public Food(String food) {
-    this.food = food;
+    this.foodName = food;
   }
 
   public long getId() {
@@ -30,12 +30,12 @@ public class Food {
     this.id = id;
   }
 
-  public String getFood() {
-    return food;
+  public String getFoodName() {
+    return foodName;
   }
 
-  public void setFood(String food) {
-    this.food = food;
+  public void setFoodName(String foodName) {
+    this.foodName = foodName;
   }
 
   public List<Pet> getPetList() {

@@ -1,6 +1,7 @@
 package com.greenfox.mysqlconnection.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,7 +16,7 @@ public class Assignee {
   private String email;
 
   @OneToMany (mappedBy = "assignee")
-  private List<Todo> todoList;
+  private List<Todo> todoList = new ArrayList<>();
 
   public Assignee() {
   }

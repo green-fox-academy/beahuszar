@@ -52,21 +52,19 @@ public class TamagotchiController {
   }
 
   @PostMapping("/nutrition")
-  public String postNutr(@ModelAttribute Pet pet) {
+  public String postNutr(Pet pet) {
     service.savePet(pet);
     return "redirect:/?name=" + pet.getName();
   }
 
   @PostMapping("/newfood/{petname}")
-  public String addNewFood(@ModelAttribute Food food,
-                           @PathVariable String petname) {
+  public String addNewFood(Food food, @PathVariable String petname) {
     service.addFood(food);
     return "redirect:/nutrition?name=" + petname;
   }
 
   @PostMapping("/newdrink/{petname}")
-  public String addNewFood(@ModelAttribute Drink drink,
-                           @PathVariable String petname) {
+  public String addNewFood(Drink drink, @PathVariable String petname) {
     service.addDrink(drink);
     return "redirect:/nutrition?name=" + petname;
   }

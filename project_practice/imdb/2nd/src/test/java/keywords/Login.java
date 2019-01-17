@@ -1,12 +1,13 @@
 package keywords;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Date;
 
 public class Login {
 
@@ -16,6 +17,7 @@ public class Login {
 
   public static void imdbLogin(String userName, String pwd, String url, WebDriver driver) {
     driver.get(url);
+    addCookie(driver, url);
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
@@ -41,6 +43,16 @@ public class Login {
         .until(ExpectedConditions
             .presenceOfElementLocated(By.id("nbusername")));
     return nbusername.getText();
+  }
+
+  public static void addCookie(WebDriver driver, String url) {
+    Cookie cookie = new Cookie.Builder("login", "logged in")
+        .domain(url)
+        .expiresOn(new Date(2020, 10, 31))
+        .isHttpOnly(true)
+        .isSecure(true)
+        .path("/cookie")
+        .build();
   }
 }
 

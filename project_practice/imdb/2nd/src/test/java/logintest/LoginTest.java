@@ -29,9 +29,4 @@ public class LoginTest {
 
     assertEquals("Beáta", Login.userName(driver));
   }
-
-  @Test
-  public void searchMovie() {
-    Search.searchMovie("Death Note", driver);
-  }
 }

@@ -1,14 +1,13 @@
 package keywords;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WatchList {
   public static WebDriverWait wait;
+  public static Actions action;
 
   public WatchList() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
@@ -61,5 +60,16 @@ public class WatchList {
     wait = new WebDriverWait(driver, 10);
     WebElement addToLowerWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[2]/div[2]/span/div")));
     return addToLowerWatchListButton.getAttribute("title");
+  }
+
+  public static void clickCheckBox(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    WebElement watchList = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"navWatchlistMenu\"]/p/a")));
+    watchList.click();
+    WebElement edit = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"center-1-react\"]/div/div[1]/div/div[1]/a")));
+    edit.click();
+    WebElement checkBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("totalCheck")));
+    action = new Actions(driver);
+    action.moveToElement(checkBox).click().build().perform();
   }
 }

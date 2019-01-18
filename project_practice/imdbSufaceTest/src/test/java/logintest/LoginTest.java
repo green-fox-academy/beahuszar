@@ -28,4 +28,10 @@ public class LoginTest {
 
     assertEquals("Beáta", Login.userName(driver));
   }
+
+  @Test
+  public void logOut() {
+    Login.imdbLogin("husz.beata@gmail.com", "imdbPsw2019", "https://www.imdb.com/", driver);
+    Login.logOut(driver);
+  }
 }

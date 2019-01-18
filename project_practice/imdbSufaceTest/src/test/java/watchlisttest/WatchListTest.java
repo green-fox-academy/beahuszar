@@ -40,4 +40,9 @@ public class WatchListTest {
 
     assertEquals("Click to remove from watchlist", WatchList.getLowerAddButtonTitle(driver));
   }
+
+  @Test
+  public void checkIt() {
+    WatchList.clickCheckBox(driver);
+  }
 }

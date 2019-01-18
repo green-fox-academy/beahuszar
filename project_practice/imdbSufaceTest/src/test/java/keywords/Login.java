@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Date;
 
 public class Login {
+  public static WebDriverWait wait;
+  public static Actions action;
 
   public Login() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
@@ -19,7 +22,7 @@ public class Login {
     driver.get(url);
     addCookie(driver, url);
 
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    wait = new WebDriverWait(driver, 10);
 
     WebElement signIn = wait
         .until(ExpectedConditions
@@ -38,7 +41,7 @@ public class Login {
   }
 
   public static String userName(WebDriver driver) {
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    wait = new WebDriverWait(driver, 10);
     WebElement nbusername = wait
         .until(ExpectedConditions
             .presenceOfElementLocated(By.id("nbusername")));
@@ -53,5 +56,13 @@ public class Login {
         .isSecure(true)
         .path("/cookie")
         .build();
+  }
+
+  public static void logOut(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    WebElement logInButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"navUserMenu\"]")));
+    WebElement logOutButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"nblogout\"]")));
+    action.moveToElement(logInButton).build().perform();
+    logOutButton.click();
   }
 }

@@ -4,8 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WatchList {
+  public static WebDriverWait wait;
+
   public WatchList() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
   }
@@ -29,5 +33,17 @@ public class WatchList {
     }
   }
 
+  public static void addFirstResultToWatchList(WebDriver driver, String movieTitle) {
+    Search.chooseMovie(movieTitle, driver);
+    wait = new WebDriverWait(driver, 10);
+    WebElement addToWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div")));
+    addToWatchListButton.click();
+  }
 
+  public static void addFirstResultToWatchListLowerButton(WebDriver driver, String movieTitle) {
+    Search.chooseMovie(movieTitle, driver);
+    wait = new WebDriverWait(driver, 10);
+    WebElement addToWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[2]/div[2]/span/div")));
+    addToWatchListButton.click();
+  }
 }

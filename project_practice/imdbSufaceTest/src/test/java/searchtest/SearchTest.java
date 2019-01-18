@@ -27,4 +27,11 @@ public class SearchTest {
 
     assertEquals("Results for \"" + movieTitle + "\"", Search.getSearchResult(driver));
   }
+
+  @Test
+  public void chooseFirstResult() {
+    Search.chooseMovie(movieTitle, driver);
+
+    assertEquals(movieTitle.toLowerCase().trim(), Search.getChosenMovieTitleFromPage(driver).toLowerCase().trim());
+  }
 }

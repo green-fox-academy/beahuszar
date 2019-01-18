@@ -21,6 +21,7 @@ public class WatchList {
 
   public static int getTitleCount(WebDriver driver) {
     WebElement titleCount = driver.findElement(By.xpath("//*[@id=\"center-1-react\"]/div/div[2]/div[1]/div[2]/div/span[1]"));
+
     return Integer.parseInt(titleCount.getText().substring(0, 1));
   }
 
@@ -37,6 +38,7 @@ public class WatchList {
     Search.chooseMovie(movieTitle, driver);
     wait = new WebDriverWait(driver, 10);
     WebElement addToWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div")));
+    System.out.println("isdufhsidf" + addToWatchListButton.getAttribute("title"));
     addToWatchListButton.click();
   }
 
@@ -45,5 +47,18 @@ public class WatchList {
     wait = new WebDriverWait(driver, 10);
     WebElement addToWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[2]/div[2]/span/div")));
     addToWatchListButton.click();
+  }
+
+  public static String getAddButtonTitle(WebDriver driver) {
+    driver.navigate().refresh();
+    wait = new WebDriverWait(driver, 10);
+    WebElement addToWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div")));
+    return addToWatchListButton.getAttribute("title");
+  }
+
+  public static String getLowerAddButtonTitle(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    WebElement addToLowerWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[2]/div[2]/span/div")));
+    return addToLowerWatchListButton.getAttribute("title");
   }
 }

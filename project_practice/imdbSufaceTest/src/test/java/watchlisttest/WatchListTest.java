@@ -18,7 +18,7 @@ public class WatchListTest {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
     this.driver = new ChromeDriver();
     Login.imdbLogin("husz.beata@gmail.com","imdbPsw2019","https://www.imdb.com/", driver);
-    this.movieTitle = "Star Wars";
+    this.movieTitle = "Zorro";
   }
 
   @Test
@@ -30,10 +30,14 @@ public class WatchListTest {
   @Test
   public void addFirstResultToWatchList() {
     WatchList.addFirstResultToWatchList(driver, movieTitle);
+
+    assertEquals("Click to remove from watchlist", WatchList.getAddButtonTitle(driver));
   }
 
   @Test
   public void addFirstResultToWatchListLowerButton() {
     WatchList.addFirstResultToWatchListLowerButton(driver, movieTitle);
+
+    assertEquals("Click to remove from watchlist", WatchList.getLowerAddButtonTitle(driver));
   }
 }

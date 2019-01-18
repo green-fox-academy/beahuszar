@@ -1,6 +1,7 @@
 package keywords;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -20,7 +21,13 @@ public class WatchList {
   }
 
   public static int getWatchListCount(WebDriver driver) {
-    WebElement watchListCount = driver.findElement(By.xpath("//*[@id=\"navWatchlistMenu\"]/p/span"));
-    return Integer.parseInt(watchListCount.getText().substring(0, 1));
+    try {
+      WebElement watchListCount = driver.findElement(By.xpath("//*[@id=\"navWatchlistMenu\"]/p/span"));
+      return Integer.parseInt(watchListCount.getText().substring(1, 2));
+    } catch (NoSuchElementException e) {
+      return 0;
+    }
   }
+
+
 }

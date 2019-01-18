@@ -22,7 +22,6 @@ public class WatchListTest {
   @Test
   public void checkWatchList() {
     WatchList.checkWatchList(driver);
-
-    assertEquals(WatchList.getTitleCount(driver), WatchList.getTitleCount(driver));
+    assertEquals(WatchList.getWatchListCount(driver), WatchList.getTitleCount(driver));
   }
 }

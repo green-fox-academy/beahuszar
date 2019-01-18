@@ -14,7 +14,7 @@ public class LoginTest {
 
   @Before
   public void setUp() {
-    System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
     driver = new ChromeDriver();
   }
 

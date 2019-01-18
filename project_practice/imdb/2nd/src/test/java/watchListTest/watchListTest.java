@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.Assert.assertEquals;
+
 public class watchListTest {
   private WebDriver driver;
 
@@ -21,6 +23,8 @@ public class watchListTest {
   public void checkWatchList() {
     WatchList.checkWatchList(driver);
 
-    
+    assertEquals(WatchList.getTitleCount(driver), WatchList.getTitleCount(driver));
   }
+
+
 }

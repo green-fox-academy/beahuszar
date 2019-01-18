@@ -57,6 +57,7 @@ public class WatchList {
   }
 
   public static String getLowerAddButtonTitle(WebDriver driver) {
+    driver.navigate().refresh();
     wait = new WebDriverWait(driver, 10);
     WebElement addToLowerWatchListButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"title-overview-widget\"]/div[2]/div[2]/span/div")));
     return addToLowerWatchListButton.getAttribute("title");

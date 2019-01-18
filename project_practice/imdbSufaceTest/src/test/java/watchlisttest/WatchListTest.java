@@ -18,7 +18,7 @@ public class WatchListTest {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
     this.driver = new ChromeDriver();
     Login.imdbLogin("husz.beata@gmail.com","imdbPsw2019","https://www.imdb.com/", driver);
-    this.movieTitle = "Zorro";
+    this.movieTitle = "Lord of the rings";
   }
 
   @Test

@@ -2,10 +2,15 @@ package watch_issue_test;
 
 import keywords.Login;
 import keywords.WatchIssue;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
 
@@ -36,5 +41,16 @@ public class WatchIssueTest {
     assertEquals("ALPHA-4", WatchIssue.checkIssueTag(driver));
   }
 
+  @Test
+  public void watchIssue() {
+    WatchIssue.listIssues(driver);
+    WatchIssue.openFirstIssue(driver);
+    int originalWatcherData = WatchIssue.getWatcherData(driver);
+    WatchIssue.startWatchingCurrentIssue(driver);
+    WebElement element = driver.findElement(By.tagName("body"));
+    element.sendKeys(Keys.F5);
+    int refreshedWatcherData = WatchIssue.getWatcherData(driver);
 
+    assertEquals(originalWatcherData + 1, refreshedWatcherData);
+  }
 }

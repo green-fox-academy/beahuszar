@@ -13,6 +13,7 @@ public class WatchIssue {
   private static WebElement pageHeader;
   private static WebElement firstOpenIssue;
   private static WebElement startWatchingLink;
+  private static WebElement watcherData;
 
   public WatchIssue() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
@@ -52,4 +53,9 @@ public class WatchIssue {
     startWatchingLink.click();
   }
 
+  public static int getWatcherData(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    watcherData = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("watcher-data")));
+    return Integer.parseInt(watcherData.getText());
+  }
 }

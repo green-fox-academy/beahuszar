@@ -20,7 +20,7 @@ public class Login {
   public static void logIn(WebDriver driver, String userName, String pwd, String url) {
     wait = new WebDriverWait(driver, 10);
     driver.get(url);
-    
+
     logIn = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-submit")));
     userNameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("private static")));
     pwdField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-password")));

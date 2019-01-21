@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.Assert.assertEquals;
+
 public class WatchIssueTest {
   private WebDriver driver;
   private String userName = System.getenv("JIRA_UN");
@@ -24,6 +26,6 @@ public class WatchIssueTest {
   public void listIssues() {
     WatchIssue.openFirstIssueFromIssuesMenu(driver);
 
-
+    assertEquals("my open issues", WatchIssue.getWatchListPageHeader(driver));
   }
 }

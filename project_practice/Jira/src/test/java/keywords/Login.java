@@ -22,7 +22,7 @@ public class Login {
     driver.get(url);
 
     logIn = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-submit")));
-    userNameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("private static")));
+    userNameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-username")));
     pwdField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-password")));
 
     userNameField.clear();

@@ -38,4 +38,10 @@ public class WatchIssue {
     firstOpenIssue = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("key-val")));
     firstOpenIssue.click();
   }
+
+  public static String checkIssueTag(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    firstOpenIssue = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("key-val")));
+    return firstOpenIssue.getText();
+  }
 }

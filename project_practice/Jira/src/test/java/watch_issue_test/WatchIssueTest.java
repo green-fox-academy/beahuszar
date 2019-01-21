@@ -32,5 +32,7 @@ public class WatchIssueTest {
   public void openFirstIssue() {
     WatchIssue.listIssues(driver);
     WatchIssue.openFirstIssue(driver);
+
+    assertEquals("ALPHA-4", WatchIssue.checkIssueTag(driver));
   }
 }

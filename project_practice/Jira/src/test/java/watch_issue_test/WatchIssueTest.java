@@ -10,7 +10,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,7 +22,12 @@ public class WatchIssueTest {
   public void setUp() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
     this.driver = new ChromeDriver();
-    Login.logIn(driver, userName, pwd, "http://jira.greenfox.academy/login.jsp");
+    Login.logIn(driver, userName, pwd, "https://jira.greenfox.codecanvas.hu/secure/Dashboard.jspa");
+  }
+
+  @After
+  public void clearUp() {
+    driver.quit();
   }
 
   @Test
@@ -38,7 +42,7 @@ public class WatchIssueTest {
     WatchIssue.listIssues(driver);
     WatchIssue.openFirstIssue(driver);
 
-    assertEquals("ALPHA-4", WatchIssue.checkIssueTag(driver));
+    assertEquals("JTA-57", WatchIssue.checkIssueTag(driver));
   }
 
   @Test

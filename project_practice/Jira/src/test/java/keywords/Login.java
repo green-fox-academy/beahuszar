@@ -21,7 +21,7 @@ public class Login {
     wait = new WebDriverWait(driver, 10);
     driver.get(url);
 
-    logIn = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-submit")));
+    logIn = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login")));
     userNameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-username")));
     pwdField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-form-password")));
 

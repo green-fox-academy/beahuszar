@@ -12,6 +12,7 @@ public class WatchIssue {
   private static WebElement issuesMenu;
   private static WebElement pageHeader;
   private static WebElement firstOpenIssue;
+  private static WebElement startWatchingLink;
 
   public WatchIssue() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
@@ -44,4 +45,11 @@ public class WatchIssue {
     firstOpenIssue = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("key-val")));
     return firstOpenIssue.getText();
   }
+
+  public static void startWatchingCurrentIssue(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    startWatchingLink = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("watching-toggle")));
+    startWatchingLink.click();
+  }
+
 }

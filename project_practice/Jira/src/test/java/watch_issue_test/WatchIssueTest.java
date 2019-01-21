@@ -35,4 +35,6 @@ public class WatchIssueTest {
 
     assertEquals("ALPHA-4", WatchIssue.checkIssueTag(driver));
   }
+
+
 }

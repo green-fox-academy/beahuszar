@@ -15,7 +15,7 @@ public class WatchIssue {
   }
 
   public static void openFirstIssueFromIssuesMenu(WebDriver driver) {
-    wait = new WebDriverWait(driver, 10);
+    wait = new WebDriverWait(driver, 15);
     myOpenIssues = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("filter_lnk_my_lnk")));
     myOpenIssues.click();
   }

@@ -35,3 +35,4 @@ virtual machine crash logs, see http://www.java.com/en/download/help/error_hotsp
 hs_err_pid*
 
 login.txt
+FileReader.java

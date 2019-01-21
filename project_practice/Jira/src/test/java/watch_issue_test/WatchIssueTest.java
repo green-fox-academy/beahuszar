@@ -1,6 +1,5 @@
 package watch_issue_test;
 
-import keywords.FileReader;
 import keywords.Login;
 import keywords.WatchIssue;
 import org.junit.Before;
@@ -24,8 +23,14 @@ public class WatchIssueTest {
 
   @Test
   public void listIssues() {
-    WatchIssue.openFirstIssueFromIssuesMenu(driver);
+    WatchIssue.listIssues(driver);
 
     assertEquals("my open issues", WatchIssue.getWatchListPageHeader(driver));
+  }
+
+  @Test
+  public void openFirstIssue() {
+    WatchIssue.listIssues(driver);
+    WatchIssue.openFirstIssue(driver);
   }
 }

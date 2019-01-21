@@ -3,7 +3,6 @@ package keywords;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,12 +11,13 @@ public class WatchIssue {
   private static WebDriverWait wait;
   private static WebElement issuesMenu;
   private static WebElement pageHeader;
+  private static WebElement firstOpenIssue;
 
   public WatchIssue() {
     System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
   }
 
-  public static void openFirstIssueFromIssuesMenu(WebDriver driver) {
+  public static void listIssues(WebDriver driver) {
     wait = new WebDriverWait(driver, 10);
     driver.manage().window().maximize();
     issuesMenu = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("find_link")));
@@ -31,5 +31,11 @@ public class WatchIssue {
    pageHeader = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"search-header-view\"]/div/h1")));
 
    return pageHeader.getAttribute("title").toLowerCase();
+  }
+
+  public static void openFirstIssue(WebDriver driver) {
+    wait = new WebDriverWait(driver, 10);
+    firstOpenIssue = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("key-val")));
+    firstOpenIssue.click();
   }
 }

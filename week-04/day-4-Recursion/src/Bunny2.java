@@ -5,7 +5,7 @@ public class Bunny2 {
 // number of "ears" in the bunny line 1, 2, ... n (without loops or multiplication)
 
   public static void main(String[] args) {
-    System.out.println(earcounter(2, 3, 2));
+    System.out.println(earcounter(2, 3, 5));
   }
 
   public static int earcounter(int oddEar, int evenEar, int line) {

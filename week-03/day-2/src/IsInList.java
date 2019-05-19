@@ -12,7 +12,7 @@ public class IsInList{
 
     public static void checkNums (ArrayList input) {
         ArrayList thisArray = input;
-        ArrayList<Integer> toCompare = new ArrayList<>(Arrays.asList(4,8,12,16));
+        ArrayList<Integer> toCompare = new ArrayList<>(Arrays.asList(4, 8, 12, 16));
 
         boolean toReturn;
 

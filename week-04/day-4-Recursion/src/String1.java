@@ -7,7 +7,6 @@ public class String1 {
     System.out.println(xReplace("genxogagxi"));
   }
 
-
   public static String xReplace (String string) {
     if (string.contains("x")) {
       return xReplace(string.replaceFirst("x","y"));

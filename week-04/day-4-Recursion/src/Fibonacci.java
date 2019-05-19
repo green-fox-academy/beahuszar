@@ -7,7 +7,7 @@ public class Fibonacci {
 // fibonacci number, with n=0 representing the start of the sequence.
 
   public static void main(String[] args) {
-    System.out.println(fibonacci(20));
+    System.out.println(fibonacci(3));
   }
 
   public static int fibonacci (int input) {
